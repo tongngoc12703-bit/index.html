@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yêu Lại Tiếng Trung Sau 60 Ngày — Lộ trình chữa lành & kích hoạt phản xạ</title>
+  
+  <!-- Google Fonts: Cormorant Garamond / Playfair Display (Serif tạp chí) + Be Vietnam Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          },
+          colors: {
+            moss: {
+              800: '#383f2d',
+              900: '#2f3526',
+              950: '#22271c',
+            },
+            khaki: {
+              400: '#9ea48c',
+              500: '#8c937b',
+              600: '#757c64',
+            },
+            sand: {
+              50: '#faf8f4',
+              100: '#f4efe4',
+              200: '#e7e1d4',
+              300: '#d8cfbe',
+              400: '#c5b8a1',
+            },
+            ochre: {
+              400: '#cca064',
+              500: '#ba8448',
+              600: '#a67238',
+              700: '#86572a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #E7E1D4;
+      color: #2F3526;
+      font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #E7E1D4;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #8C937B;
+      border-radius: 9999px;
+    }
+    .stamp-rotate {
+      animation: spin 30s linear infinite;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-[#2f3526] selection:bg-ochre-400/30 selection:text-moss-950 pb-16 md:pb-0 bg-[#e7e1d4]">
+
+  <!-- Top Urgency Notice Bar -->
+  <div class="bg-moss-900 text-sand-100 text-xs py-2 px-4 text-center font-medium tracking-wider uppercase border-b border-moss-800">
+    <span class="text-ochre-400 mr-1.5">✦</span> Đợt thử nghiệm giới hạn: <strong>Chỉ nhận 3 — 5 học viên</strong> để hỗ trợ sát sao và chữa lành phản xạ
+    <a href="#dang-ky" class="underline ml-2 text-ochre-400 hover:text-sand-50 font-semibold normal-case">Giữ chỗ ngay &rarr;</a>
+  </div>
+
+  <!-- NAVIGATION HEADER (Minimalist Editorial Style) -->
+  <header class="bg-[#e7e1d4]/95 backdrop-blur-md border-b border-sand-300 sticky top-0 z-40 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+      <div class="hidden md:flex items-center space-x-6 text-xs uppercase tracking-[0.2em] font-semibold text-moss-800">
+        <a href="#thau-hieu" class="hover:text-ochre-600 transition">Thấu hiểu</a>
+        <a href="#tam-su" class="hover:text-ochre-600 transition">Tâm sự</a>
+        <a href="#phuong-phap" class="hover:text-ochre-600 transition">Phương pháp</a>
+      </div>
+      
+      <a href="#" class="text-center group">
+        <span class="block text-[10px] uppercase tracking-[0.3em] text-khaki-600 font-medium">Hành Trình 60 Ngày</span>
+        <span class="font-serif italic text-2xl sm:text-3xl text-moss-950 font-bold tracking-tight">Yêu Lại Tiếng Trung</span>
+      </a>
+
+      <div class="flex items-center space-x-4">
+        <a href="#packages" class="hidden sm:inline-block text-xs uppercase tracking-widest font-semibold text-moss-800 hover:text-ochre-600 transition">
+          Lộ trình
+        </a>
+        <button onclick="openModal('surveyModal')" class="bg-ochre-500 hover:bg-ochre-600 text-sand-50 text-xs uppercase tracking-widest font-semibold px-5 py-3 transition shadow-sm">
+          Khảo Sát
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION (Asymmetric Split & Floating Card like reference design) -->
+  <section class="relative overflow-hidden bg-[#e7e1d4] pt-6 pb-16 md:pt-10 md:pb-24 border-b border-sand-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative">
+        
+        <!-- Cột trái: Khối màu Khaki / Xô Thơm với Thẻ Nổi Linen đè lên -->
+        <div class="lg:col-span-6 relative z-10">
+          <div class="bg-khaki-500/90 p-6 sm:p-10 rounded-sm relative shadow-md">
+            
+            <!-- Con dấu tròn xoay nhẹ đặc trưng phong cách Healing -->
+            <div class="absolute -top-7 -right-5 sm:-top-8 sm:-right-8 w-24 h-24 sm:w-28 sm:h-28 z-20 pointer-events-none">
+              <svg viewBox="0 0 100 100" class="w-full h-full stamp-rotate">
+                <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                <text font-size="9.5" fill="#BA8448" letter-spacing="2.8" font-family="'Playfair Display', serif" font-weight="600">
+                  <textPath href="#circlePath">✦ 60 NGÀY • YÊU LẠI TIẾNG TRUNG •</textPath>
+                </text>
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center text-ochre-500 text-sm">🌿</div>
+            </div>
+
+            <!-- Khung thẻ nổi màu Kem (Linen Card) như ảnh mẫu -->
+            <div class="bg-[#faf8f4] p-6 sm:p-9 shadow-lg border border-sand-300 relative">
+              <span class="block text-[11px] uppercase tracking-[0.25em] text-ochre-600 font-semibold mb-3">
+                Lộ trình chữa lành & kích hoạt phản xạ
+              </span>
+              <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-moss-950 leading-[1.2] mb-4">
+                Bạn không kém <br/>
+                tiếng Trung như <br/>
+                <span class="italic font-serif text-ochre-600">bạn vẫn nghĩ.</span>
+              </h1>
+              <p class="text-moss-800 text-xs sm:text-sm leading-relaxed mb-6 font-normal">
+                Bạn không cần bắt đầu lại từ con số 0. Bạn chỉ cần một cách học 
+                <strong>đủ rõ ràng, đủ nhỏ và đủ an toàn</strong> để dùng lại những gì mình đã tích lũy — rồi từng bước tin rằng: <em class="font-serif text-ochre-700">mình có thể.</em>
+              </p>
+              
+              <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                <button onclick="openModal('surveyModal', 'Gói Tiêu Chuẩn')" class="bg-ochre-500 hover:bg-ochre-600 text-sand-50 text-xs uppercase tracking-widest font-semibold px-6 py-3.5 transition text-center shadow-sm">
+                  Đăng ký khảo sát đầu vào &rarr;
+                </button>
+                <a href="#tam-su" class="inline-block border border-moss-800 hover:bg-moss-800 hover:text-sand-50 text-moss-950 text-xs uppercase tracking-widest font-semibold px-6 py-3.5 transition text-center">
+                  Đọc tâm sự
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Cột phải: Hình ảnh phong cách yên bình, chữa lành -->
+        <div class="lg:col-span-6 relative">
+          <div class="relative overflow-hidden shadow-xl border-4 border-[#faf8f4] max-h-[580px]">
+            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80" 
+                 alt="Không gian học tiếng Trung an yên và tĩnh lặng" 
+                 class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
+                 onerror="this.src='https://placehold.co/900x1200/8c937b/faf8f4?text=Yeu+Lai+Tieng+Trung'">
+            <div class="absolute inset-0 bg-moss-950/15 pointer-events-none"></div>
+          </div>
+          <div class="hidden sm:block absolute -bottom-4 -left-4 bg-[#faf8f4] px-4 py-2 border border-sand-300 text-[11px] uppercase tracking-widest text-moss-800 font-semibold shadow-sm">
+            🌿 Học vừa đủ • Dùng ngay • Tự tin
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 2. STORY SECTION: LỜI TÂM SỰ TỪ NGƯỜI SÁNG LẬP -->
+  <section id="tam-su" class="py-20 bg-[#e7e1d4]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+      
+      <!-- Khung màu Xanh Xô Thơm: Lời tâm sự trang nhã -->
+      <div class="bg-khaki-500 text-sand-50 p-8 sm:p-14 shadow-xl border border-sand-300">
+        <div class="space-y-5 text-xs sm:text-sm leading-relaxed text-sand-100">
+          <span class="text-[11px] uppercase tracking-[0.25em] text-ochre-400 font-semibold block">
+            Tâm sự từ người sáng lập
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-sand-50 font-normal">
+            Xin chào, bạn của tôi!
+          </h2>
+          <p>
+            Mình đã từng học đi học lại tiếng Trung rất nhiều lần. Có những từ đã chép nắn nót kín cả chục cuốn vở, nhưng đến lúc cần mở miệng nói hay nghe một câu hỏi đời thường, đầu óc mình hoàn toàn đông cứng.
+          </p>
+          <p>
+            Có những đêm mình đã khóc rất nhiều vì nghĩ bản thân kém cỏi: <em>"Tại sao mình đã cố gắng nhiều như vậy mà vẫn không làm được? Có lẽ ngoại ngữ này không dành cho mình."</em> Mình từng mất sạch niềm tin vào chính mình.
+          </p>
+          <div class="border-l-2 border-ochre-400 pl-4 py-2.5 italic font-serif text-sand-50 text-sm sm:text-base bg-khaki-600/30">
+            "Khó khăn không có nghĩa là bạn không thể. Bạn không hề lười. Vấn đề chỉ là chúng ta đã học theo cách nhồi nhét thụ động quá lâu."
+          </div>
+          <p>
+            Mình tạo ra <strong>Yêu Lại Tiếng Trung Sau 60 Ngày</strong> để mang đến cho bạn một <strong>không gian đủ an toàn</strong> để gỡ bỏ nỗi sợ sai, lấy lại những từ vựng đã ngủ quên và tự hào nói: <em>“Hôm nay mình đã nói được!”</em>
+          </p>
+        </div>
+
+        <div class="pt-8 mt-8 border-t border-khaki-400/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <div class="font-serif italic text-lg font-bold text-sand-50">Tong Thi Ngoc</div>
+            <div class="text-[11px] text-sand-200 uppercase tracking-widest">Sáng lập dự án "Yêu Lại Tiếng Trung"</div>
+          </div>
+          <button onclick="openModal('surveyModal')" class="bg-ochre-500 hover:bg-ochre-600 text-sand-50 text-xs uppercase tracking-widest font-semibold px-6 py-3.5 transition shadow">
+            Đồng hành cùng Ngọc &rarr;
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. REALITY CHECK: 4 NỖI ĐAU ĐIỂM A -->
+  <section id="thau-hieu" class="py-20 bg-[#f4efe4] border-t border-b border-sand-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-[11px] uppercase tracking-[0.25em] text-ochre-600 font-semibold block mb-2">Thực tế điểm A</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-moss-950 font-normal">
+          Bạn đã nạp rất nhiều từ vựng và ngữ pháp... Nhưng sao khi cần nói lại tắt tiếng?
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="bg-[#faf8f4] p-8 border border-sand-300 shadow-sm relative">
+          <span class="text-xs font-serif italic text-ochre-600 font-bold block mb-2">01 / Điểm nghẽn</span>
+          <h3 class="font-serif text-xl font-bold text-moss-950 mb-2">Kiến thức rời rạc, không ghép nổi thành câu</h3>
+          <p class="text-xs sm:text-sm text-moss-800 leading-relaxed">
+            Nhìn từ thì thấy rất quen, nhưng từ ngữ nằm rải rác trong sổ và app. Cứ mở miệng ra định nói là đầu óc trống rỗng, không biết sắp xếp trật tự câu như thế nào cho đúng.
+          </p>
+        </div>
+
+        <div class="bg-[#faf8f4] p-8 border border-sand-300 shadow-sm relative">
+          <span class="text-xs font-serif italic text-ochre-600 font-bold block mb-2">02 / Rào cản tâm lý</span>
+          <h3 class="font-serif text-xl font-bold text-moss-950 mb-2">Nỗi sợ bị đánh giá và sợ sai thanh điệu</h3>
+          <p class="text-xs sm:text-sm text-moss-800 leading-relaxed">
+            Sợ phát âm sai thanh 1, thanh 4. Sợ nghe lại giọng ghi âm của mình. Sợ nói trước người khác bị chê cười nên bạn chọn im lặng an toàn.
+          </p>
+        </div>
+
+        <div class="bg-[#faf8f4] p-8 border border-sand-300 shadow-sm relative">
+          <span class="text-xs font-serif italic text-ochre-600 font-bold block mb-2">03 / Quá tải thông tin</span>
+          <h3 class="font-serif text-xl font-bold text-moss-950 mb-2">Mệt mỏi vì tự xoay xở trong biển tài liệu</h3>
+          <p class="text-xs sm:text-sm text-moss-800 leading-relaxed">
+            Cứ quyết tâm học lại là lại tải app mới, mua giáo trình mới. Nhưng vì thiếu thứ tự ưu tiên, bạn không biết hôm nay nên học gì và phần nào mình thật sự yếu.
+          </p>
+        </div>
+
+        <div class="bg-[#faf8f4] p-8 border border-sand-300 shadow-sm relative">
+          <span class="text-xs font-serif italic text-ochre-600 font-bold block mb-2">04 / Tổn thương niềm tin</span>
+          <h3 class="font-serif text-xl font-bold text-moss-950 mb-2">Mất dần niềm tin: "Có lẽ mình không có khiếu"</h3>
+          <p class="text-xs sm:text-sm text-moss-800 leading-relaxed">
+            Sau vài lần học rồi quên, bỏ dở rồi tự dằn vặt, bạn tự dán nhãn bản thân kém cỏi. Vấn đề không nằm ở bạn, mà nằm ở việc thiếu người dìu dắt cách gợi nhớ.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. CORE METHOD: MÌNH CÓ THỂ™ -->
+  <section id="phuong-phap" class="py-20 bg-[#e7e1d4]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-[11px] uppercase tracking-[0.25em] text-ochre-600 font-semibold block mb-2">Phương pháp cốt lõi</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-moss-950 font-normal">Phương pháp MÌNH CÓ THỂ™</h2>
+        <p class="text-xs sm:text-sm text-moss-700 mt-2">5 bước khoa học biến kiến thức "chết" thành phản xạ tự nhiên.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+        
+        <div class="bg-[#faf8f4] p-6 border border-sand-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] uppercase tracking-widest text-ochre-600 font-bold mb-1">Bước 1</div>
+            <h3 class="font-serif text-lg font-bold text-moss-950 mb-1">INPUT</h3>
+            <p class="text-xs text-khaki-600 font-medium mb-2">Tiếp nhận vừa đủ</p>
+            <p class="text-xs text-moss-800 leading-relaxed">Học từ vựng và mẫu câu vừa sức. Tránh nhồi nhét gây quá tải não bộ.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-sand-200 text-[11px] font-semibold text-moss-900">Học ít, dùng chắc</div>
+        </div>
+
+        <div class="bg-[#faf8f4] p-6 border border-sand-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] uppercase tracking-widest text-ochre-600 font-bold mb-1">Bước 2</div>
+            <h3 class="font-serif text-lg font-bold text-moss-950 mb-1">UNDERSTAND</h3>
+            <p class="text-xs text-khaki-600 font-medium mb-2">Hiểu sâu bản chất</p>
+            <p class="text-xs text-moss-800 leading-relaxed">Hiểu rõ ngữ cảnh và cách dùng trong đời thực thay vì học vẹt dịch nghĩa.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-sand-200 text-[11px] font-semibold text-moss-900">Bản chất ngữ cảnh</div>
+        </div>
+
+        <div class="bg-[#faf8f4] p-6 border border-sand-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] uppercase tracking-widest text-ochre-600 font-bold mb-1">Bước 3</div>
+            <h3 class="font-serif text-lg font-bold text-moss-950 mb-1">RETRIEVE</h3>
+            <p class="text-xs text-khaki-600 font-medium mb-2">Gợi nhớ chủ động</p>
+            <p class="text-xs text-moss-800 leading-relaxed">Đóng tài liệu lại và kích hoạt não bộ tự kéo từ ra dùng qua Active Recall.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-sand-200 text-[11px] font-semibold text-moss-900">Trị chứng hay quên</div>
+        </div>
+
+        <div class="bg-[#faf8f4] p-6 border border-sand-300 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] uppercase tracking-widest text-ochre-600 font-bold mb-1">Bước 4</div>
+            <h3 class="font-serif text-lg font-bold text-moss-950 mb-1">USE</h3>
+            <p class="text-xs text-khaki-600 font-medium mb-2">Dùng ngay lập tức</p>
+            <p class="text-xs text-moss-800 leading-relaxed">Đặt câu về chính mình, ghi âm, nói chuyện từ những câu ngắn đời thường.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-sand-200 text-[11px] font-semibold text-moss-900">Gắn liền đời sống</div>
+        </div>
+
+        <div class="bg-[#faf8f4] p-6 border-2 border-ochre-500 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] uppercase tracking-widest text-ochre-600 font-bold mb-1">Bước 5</div>
+            <h3 class="font-serif text-lg font-bold text-moss-950 mb-1">BELIEVE</h3>
+            <p class="text-xs text-khaki-600 font-medium mb-2">Ghi nhận tiến bộ</p>
+            <p class="text-xs text-moss-800 leading-relaxed">Lưu lại bằng chứng nói được vào Sổ Online để hồi sinh niềm tin bền vững.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-sand-200 text-[11px] font-semibold text-ochre-600">Tự tin vững chắc</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. PACKAGES SECTION: "START YOUR JOURNEY" (3 Cards with Botanical Line-Art like reference) -->
+  <section id="packages" class="py-20 bg-[#f4efe4] border-t border-sand-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-[11px] uppercase tracking-[0.25em] text-ochre-600 font-semibold block mb-2">Lựa chọn lộ trình</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-moss-950 font-normal">Bắt Đầu Hành Trình Của Bạn</h2>
+        <p class="text-xs sm:text-sm text-moss-700 mt-2">Áp dụng mức trợ giá đặc biệt cho đợt thử nghiệm (tối đa 3–5 học viên).</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Thẻ 1: Gói Cơ Bản (Hoa Sen - Lotus Line-art) -->
+        <div class="bg-[#faf8f4] p-8 border border-sand-300 shadow-sm flex flex-col justify-between text-center hover:border-khaki-500 transition">
+          <div>
+            <!-- Botanical Line-Art 1: Lotus -->
+            <div class="w-16 h-16 mx-auto mb-4 text-ochre-500">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full">
+                <path d="M32 10 C32 10, 24 24, 24 36 C24 44, 32 48, 32 48 C32 48, 40 44, 40 36 C40 24, 32 10, 32 10 Z"></path>
+                <path d="M24 28 C16 32, 10 40, 14 48 C18 52, 28 50, 32 48"></path>
+                <path d="M40 28 C48 32, 54 40, 50 48 C46 52, 36 50, 32 48"></path>
+                <path d="M12 50 C20 54, 44 54, 52 50"></path>
+              </svg>
+            </div>
+
+            <h3 class="font-serif text-2xl font-normal text-moss-950 mb-1">Gói Cơ Bản</h3>
+            <p class="text-[11px] uppercase tracking-widest text-khaki-600 mb-4">Tự học có lộ trình</p>
+            <div class="font-serif text-3xl font-bold text-moss-950 mb-4">1.499.000đ</div>
+            <p class="text-xs text-moss-700 leading-relaxed mb-6 italic">Phù hợp nếu bạn có kỷ luật tự học tốt theo tài liệu chuẩn.</p>
+
+            <ul class="space-y-2.5 text-xs text-moss-800 text-left border-t border-sand-300 pt-6">
+              <li class="flex items-start gap-2"><span class="text-ochre-500">✦</span><span>Trọn bộ 8 Module video & tài liệu</span></li>
+              <li class="flex items-start gap-2"><span class="text-ochre-500">✦</span><span>Sổ Online "Mình Có Thể" 60 ngày</span></li>
+              <li class="flex items-start gap-2"><span class="text-ochre-500">✦</span><span>Bộ Flashcard từ vựng & mẫu câu</span></li>
+              <li class="flex items-start gap-2"><span class="text-ochre-500">✦</span><span>Cộng đồng chung hỏi đáp</span></li>
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <button onclick="openModal('surveyModal', 'Gói Cơ Bản')" class="w-full bg-ochre-500 hover:bg-ochre-600 text-sand-50 text-xs uppercase tracking-widest font-semibold py-3 transition shadow-sm">
+              Chọn Gói Cơ Bản
+            </button>
+          </div>
+        </div>
+
+        <!-- Thẻ 2: Gói Tiêu Chuẩn (Mầm Cây - Plant Line-art - Highlight Card) -->
+        <div class="bg-[#faf8f4] p-8 border-2 border-khaki-500 shadow-xl flex flex-col justify-between text-center relative lg:-translate-y-2">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-ochre-500 text-sand-50 text-[10px] uppercase font-bold tracking-widest py-1 px-4">
+            Khuyên Dùng Đợt Thử Nghiệm
+          </div>
+
+          <div>
+            <!-- Botanical Line-Art 2: Sprout/Mushroom -->
+            <div class="w-16 h-16 mx-auto mb-4 text-ochre-500 mt-2">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full">
+                <path d="M32 54 L32 28"></path>
+                <path d="M32 38 C24 38, 16 32, 16 22 C26 22, 32 30, 32 38 Z"></path>
+                <path d="M32 32 C40 32, 48 26, 48 16 C38 16, 32 24, 32 32 Z"></path>
+                <circle cx="32" cy="12" r="3"></circle>
+              </svg>
+            </div>
+
+            <h3 class="font-serif text-2xl font-normal text-moss-950 mb-1">Gói Tiêu Chuẩn</h3>
+            <p class="text-[11px] uppercase tracking-widest text-khaki-600 mb-4">Học, Thực Hành & Đồng Hành</p>
+            <div class="font-serif text-3xl sm:text-4xl font-bold text-moss-950 mb-1">2.299.000đ</div>
+            <span class="text-xs text-moss-500 line-through block mb-4">4.000.000đ</span>
+            <p class="text-xs text-moss-800 leading-relaxed mb-6 font-medium">Lựa chọn tối ưu nhất để chữa dứt điểm nỗi sợ nói và sợ sai.</p>
+
+            <ul class="space-y-2.5 text-xs text-moss-800 text-left border-t border-sand-300 pt-6">
+              <li class="flex items-start gap-2 font-semibold"><span class="text-ochre-500">✦</span><span>Toàn bộ quyền lợi của Gói Cơ Bản</span></li>
+              <li class="flex items-start gap-2"><span class="text-ochre-500">✦</span><span><strong>Zoom thực hành phản xạ</strong> hàng tuần</span></li>
+              <li class="flex items-start gap-2"><span class="text-ochre-500">✦</span><span><strong>Chữa bài ghi âm nhóm nhỏ:</strong> nắn chỉnh phát âm</span></li>
+              <li class="flex items-start gap-2"><span class="text-ochre-500">✦</span><span>Check-in nộp bài & theo dõi sát mỗi tuần</span></li>
+              <li class="flex items-start gap-2"><span class="text-ochre-500">✦</span><span>Trọn bộ 5 quà tặng trị giá 2.196.000đ</span></li>
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <button onclick="openModal('surveyModal', 'Gói Tiêu Chuẩn')" class="w-full bg-ochre-500 hover:bg-ochre-600 text-sand-50 text-xs uppercase tracking-widest font-semibold py-3.5 transition shadow-md">
+              Giữ Suất Thử Nghiệm &rarr;
+            </button>
+            <p class="text-[10px] text-moss-600 mt-2 font-medium">Chỉ còn 3 suất học phí trợ giá</p>
+          </div>
+        </div>
+
+        <!-- Thẻ 3: Gói Nâng Cao (Mandala / Sacred Geometry Line-art) -->
+        <div class="bg-[#faf8f4] p-8 border border-sand-300 shadow-sm flex flex-col justify-between text-center hover:border-khaki-500 transition">
+          <div>
+            <!-- Botanical Line-Art 3: Mandala Sun -->
+            <div class="w-16 h-16 mx-auto mb-4 text-ochre-500">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full">
+                <circle cx="32" cy="32" r="12"></circle>
+                <path d="M32 8 L32 16"></path>
+                <path d="M32 48 L32 56"></path>
+                <path d="M8 32 L16 32"></path>
+                <path d="M48 32 L56 32"></path>
+                <path d="M15 15 L21 21"></path>
+                <path d="M43 43 L49 49"></path>
+                <path d="M49 15 L43 21"></path>
+                <path d="M21 43 L15 49"></path>
+              </svg>
+            </div>
+
+            <h3 class="font-serif text-2xl font-normal text-moss-950 mb-1">Gói Nâng Cao</h3>
+            <p class="text-[11px] uppercase tracking-widest text-khaki-600 mb-4">Kèm Cặp Cá Nhân Hóa 1-1</p>
+            <div class="font-serif text-3xl font-bold text-moss-950 mb-4">3.499.000đ</div>
+            <p class="text-xs text-moss-700 leading-relaxed mb-6 italic">Dành cho bạn cần tháo gỡ điểm kẹt cá nhân thật sâu và nhanh.</p>
+
+            <ul class="space-y-2.5 text-xs text-moss-800 text-left border-t border-sand-300 pt-6">
+              <li class="flex items-start gap-2 font-semibold"><span class="text-ochre-500">✦</span><span>Toàn bộ quyền lợi của Gói Tiêu Chuẩn</span></li>
+              <li class="flex items-start gap-2"><span class="text-ochre-500">✦</span><span><strong>2 buổi Coaching 1-1 riêng (30p/buổi)</strong> trực tiếp với Ngọc</span></li>
+              <li class="flex items-start gap-2"><span class="text-ochre-500">✦</span><span>Thiết kế bản đồ học tập cá nhân hóa 100%</span></li>
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <button onclick="openModal('surveyModal', 'Gói Nâng Cao')" class="w-full bg-ochre-500 hover:bg-ochre-600 text-sand-50 text-xs uppercase tracking-widest font-semibold py-3 transition shadow-sm">
+              Chọn Gói Nâng Cao
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. HEALING WORDS SECTION (Exact Full-Width Deep Moss Band from reference) -->
+  <section class="py-24 bg-moss-900 text-sand-100 border-t border-b border-moss-800 text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+      <span class="text-ochre-400 text-2xl block mb-3">🌿</span>
+      <h2 class="font-serif italic text-3xl sm:text-4xl text-sand-50 font-normal mb-8 tracking-wide">
+        Healing Words
+      </h2>
+      <div class="font-serif italic text-lg sm:text-2xl text-sand-200 leading-relaxed max-w-3xl mx-auto mb-8 font-light">
+        “Bạn chưa cần nói thật hoàn hảo. Bạn chỉ cần đủ dũng cảm để mở lời, nói những câu đời thường chân thật và tin rằng tiếng nói của bạn xứng đáng được lắng nghe.”
+      </div>
+      <div class="text-xs uppercase tracking-[0.25em] text-ochre-400 font-medium">
+        Cam kết hoàn 100% học phí trong 7 ngày nếu không phù hợp
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. REGISTRATION & IN-PAGE SURVEY (Side-by-side with QR & Bank Info) -->
+  <section id="dang-ky" class="py-20 bg-[#e7e1d4]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-[11px] uppercase tracking-[0.25em] text-ochre-600 font-semibold block mb-2">
+          ✦ Giữ chỗ đợt thử nghiệm (Chỉ 3 — 5 học viên)
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-moss-950 font-normal">
+          Đăng Ký Khảo Sát & Giữ Chỗ
+        </h2>
+        <p class="text-xs sm:text-sm text-moss-700 mt-2">
+          Xem thông tin thanh toán & quét mã QR ở cột bên trái, sau đó điền thông tin khảo sát ở cột bên phải để hoàn tất giữ chỗ.
+        </p>
+      </div>
+
+      <!-- BỐ CỤC 2 CỘT: TRÁI = THANH TOÁN & QR, PHẢI = CÂU HỎI KHẢO SÁT -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8 items-start bg-[#f4efe4] p-4 sm:p-6 lg:p-8 border border-sand-300 shadow-sm">
+        
+        <!-- CỘT BÊN TRÁI: TOÀN BỘ THÔNG TIN THANH TOÁN, MÃ VIETQR & TẢI BIÊN LAI -->
+        <div class="md:col-span-5 bg-[#faf8f4] border border-sand-300 p-5 sm:p-6 shadow-sm flex flex-col space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-sand-200">
+            <span class="text-xs uppercase tracking-widest font-bold text-moss-900 flex items-center gap-1.5">
+              <span>💳</span> THÔNG TIN THANH TOÁN
+            </span>
+            <span class="text-xs font-semibold text-khaki-600">MB Bank (Quân Đội)</span>
+          </div>
+
+          <!-- Chi tiết thông tin chuyển khoản -->
+          <div class="space-y-2.5 text-xs bg-[#f4efe4] p-4 border border-sand-300">
+            <div>
+              <span class="text-[10px] uppercase tracking-wider text-moss-600 block font-medium">Chủ tài khoản</span>
+              <span class="font-serif font-bold text-moss-950 text-sm tracking-wide">TONG THI NGOC</span>
+            </div>
+            
+            <div class="pt-2 border-t border-sand-200">
+              <span class="text-[10px] uppercase tracking-wider text-moss-600 block font-medium">Số tài khoản</span>
+              <div class="flex items-center justify-between mt-1">
+                <span class="font-mono font-bold text-moss-950 text-base sm:text-lg tracking-wider">0376837127</span>
+                <button type="button" onclick="copyContentWithFeedback('0376837127', this, 'Số tài khoản')" class="px-2.5 py-1 bg-moss-800 hover:bg-moss-700 active:scale-95 text-sand-50 text-[11px] font-semibold transition flex items-center gap-1 shadow-sm">
+                  <span class="btn-text">Sao chép</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="pt-2 border-t border-sand-200">
+              <span class="text-[10px] uppercase tracking-wider text-moss-600 block font-medium">Ngân hàng</span>
+              <span class="font-medium text-moss-800">MB Bank (Ngân hàng Quân Đội)</span>
+            </div>
+
+            <div class="pt-2 border-t border-sand-200">
+              <span class="text-[10px] uppercase tracking-wider text-moss-600 block font-medium">Cú pháp chuyển khoản</span>
+              <div class="flex items-center justify-between mt-1">
+                <span class="font-mono font-bold text-ochre-600 text-xs">[Họ tên] [SĐT] 60N</span>
+                <button type="button" onclick="copyContentWithFeedback('[Họ tên] [SĐT] 60N', this, 'Cú pháp')" class="px-2 py-0.5 bg-sand-200 hover:bg-sand-300 active:scale-95 text-moss-900 text-[10px] font-semibold border border-sand-300 transition">
+                  <span class="btn-text">Sao chép</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mã VietQR MB Bank -->
+          <div class="bg-white p-3 border border-sand-300 shadow-sm flex flex-col items-center">
+            <div class="flex items-center justify-between w-full px-2 mb-1.5 text-[10px] font-bold">
+              <span class="text-red-600 tracking-tight">VietQR</span>
+              <span class="text-blue-800">MB BANK</span>
+            </div>
+            <img src="https://api.vietqr.io/image/970422-0376837127-print.jpg?accountName=TONG%20THI%20NGOC" 
+                 alt="Mã VietQR MB Bank - TONG THI NGOC" 
+                 class="w-full max-w-[210px] object-contain mx-auto" />
+            <div class="flex items-center justify-between w-full px-2 mt-1.5 text-[9px] text-moss-500 font-medium">
+              <span>napas 247</span>
+              <span class="text-moss-800 font-semibold">Tức thì 24/7</span>
+            </div>
+          </div>
+
+          <!-- Khu vực tải ảnh biên lai chuyển khoản -->
+          <div class="pt-1">
+            <label class="text-xs font-bold text-moss-950 flex items-center justify-between mb-1.5">
+              <span>📸 Tải ảnh chụp biên lai chuyển khoản:</span>
+              <span class="text-[10px] text-moss-600 bg-sand-200 px-2 py-0.5">Tùy chọn</span>
+            </label>
+            
+            <div id="pageReceiptDropzone" onclick="document.getElementById('pageReceiptInput').click()" 
+                 class="p-4 border-2 border-dashed border-khaki-400 hover:border-moss-800 bg-[#f4efe4] cursor-pointer transition text-center flex flex-col items-center">
+              <input type="file" id="pageReceiptInput" accept="image/*" class="hidden" onchange="previewReceiptImage(this, 'pageReceiptPreviewBox', 'pageReceiptDropzone', 'pageReceiptThumb', 'pageReceiptName')">
+              <span class="text-lg mb-1">📷</span>
+              <span class="text-xs font-semibold text-moss-900">Bấm để tải ảnh giao dịch lên</span>
+              <span class="text-[10px] text-moss-600 mt-0.5">Hỗ trợ JPG, PNG, ảnh chụp màn hình</span>
+            </div>
+
+            <div id="pageReceiptPreviewBox" class="hidden p-3 bg-sand-100 border border-khaki-500 items-center justify-between gap-2.5 mt-2">
+              <div class="flex items-center gap-2.5 overflow-hidden">
+                <img id="pageReceiptThumb" src="" alt="Biên lai" class="w-12 h-12 object-cover border border-sand-300">
+                <div class="text-left overflow-hidden">
+                  <div class="text-[11px] font-bold text-moss-900">✓ Đã chọn ảnh biên lai</div>
+                  <p id="pageReceiptName" class="text-[10px] text-moss-600 truncate max-w-[150px]">bienlai.png</p>
+                </div>
+              </div>
+              <button type="button" onclick="removeReceiptImage('pageReceiptInput', 'pageReceiptPreviewBox', 'pageReceiptDropzone')" 
+                      class="px-2.5 py-1 text-[11px] font-semibold text-ochre-600 border border-ochre-400 hover:bg-ochre-500 hover:text-sand-50 transition">
+                Đổi ảnh
+              </button>
+            </div>
+          </div>
+
+          <div class="p-3 bg-[#f4efe4] border border-sand-300 text-[11px] text-moss-800 leading-relaxed">
+            💡 Sau khi chuyển khoản, bạn tải ảnh giao dịch để Ngọc đối soát và gửi tài liệu mở khóa vào Zalo cho bạn nhanh nhất.
+          </div>
+        </div>
+
+        <!-- CỘT BÊN PHẢI: TOÀN BỘ CÂU HỎI KHẢO SÁT ĐẦU VÀO -->
+        <form onsubmit="handleFormSubmit(event)" class="md:col-span-7 bg-[#faf8f4] border border-sand-300 p-5 sm:p-8 space-y-6 shadow-sm">
+          
+          <!-- Câu 1: Chọn gói đăng ký -->
+          <div>
+            <label class="block text-xs uppercase tracking-wider font-bold text-moss-950 mb-2">
+              1. Gói bạn quan tâm và đăng ký giữ chỗ: *
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              
+              <label class="p-3 border border-sand-300 bg-[#f4efe4] hover:border-khaki-500 cursor-pointer transition flex flex-col justify-between">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-serif font-bold text-xs text-moss-900">Gói Cơ Bản</span>
+                  <input type="radio" name="page_package" value="Gói Cơ Bản" class="accent-ochre-600">
+                </div>
+                <div class="font-serif font-bold text-sm text-moss-950">1.499.000đ</div>
+                <p class="text-[10px] text-moss-600 mt-0.5">Tự học có lộ trình</p>
+              </label>
+
+              <label class="p-3 border-2 border-khaki-500 bg-sand-200 cursor-pointer transition flex flex-col justify-between relative shadow-sm">
+                <span class="absolute -top-2.5 right-2 bg-ochre-500 text-sand-50 text-[9px] font-bold px-1.5 py-0.5 uppercase tracking-wider">Khuyên dùng</span>
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-serif font-bold text-xs text-moss-950">Gói Tiêu Chuẩn</span>
+                  <input type="radio" name="page_package" value="Gói Tiêu Chuẩn" checked class="accent-ochre-600">
+                </div>
+                <div class="font-serif font-bold text-sm text-moss-950">2.299.000đ</div>
+                <p class="text-[10px] text-moss-700 mt-0.5 font-medium">Học & Đồng hành</p>
+              </label>
+
+              <label class="p-3 border border-sand-300 bg-[#f4efe4] hover:border-khaki-500 cursor-pointer transition flex flex-col justify-between">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-serif font-bold text-xs text-moss-900">Gói Nâng Cao</span>
+                  <input type="radio" name="page_package" value="Gói Nâng Cao" class="accent-ochre-600">
+                </div>
+                <div class="font-serif font-bold text-sm text-moss-950">3.499.000đ</div>
+                <p class="text-[10px] text-moss-600 mt-0.5">Kèm 1-1 riêng</p>
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Thông tin liên hệ -->
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-moss-900 mb-1">Họ và tên của bạn: *</label>
+              <input type="text" name="page_fullName" required placeholder="Nguyễn Phương Anh" 
+                     class="w-full bg-[#f4efe4] border border-sand-300 p-2.5 text-xs outline-none focus:border-khaki-600 text-moss-950 transition">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-moss-900 mb-1">Số Zalo / Điện thoại nhận tài liệu: *</label>
+              <input type="tel" name="page_phone" required placeholder="0912 xxx xxx" 
+                     class="w-full bg-[#f4efe4] border border-sand-300 p-2.5 text-xs outline-none focus:border-khaki-600 text-moss-950 transition">
+            </div>
+          </div>
+
+          <!-- Câu 2: Khó khăn lớn nhất -->
+          <div>
+            <label class="block text-xs font-semibold text-moss-900 mb-1.5">
+              2. Điều gì đang khiến bạn cảm thấy khó khăn nhất khi học tiếng Trung?
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-xs text-moss-800">
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_difficulties" value="Không nhớ được từ vựng" class="accent-ochre-600">
+                <span>Không nhớ được từ vựng</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_difficulties" value="Học trước quên sau" class="accent-ochre-600">
+                <span>Học trước quên sau</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_difficulties" value="Biết từ nhưng không đặt được câu" class="accent-ochre-600">
+                <span>Biết từ nhưng không đặt được câu</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_difficulties" value="Nghe người Trung Quốc nói không hiểu" class="accent-ochre-600">
+                <span>Nghe người TQ nói không hiểu</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_difficulties" value="Nghe được nhưng không phản xạ kịp" class="accent-ochre-600">
+                <span>Nghe được nhưng không phản xạ kịp</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_difficulties" value="Sợ phát âm sai/thanh điệu sai" class="accent-ochre-600">
+                <span>Sợ phát âm sai / thanh điệu sai</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_difficulties" value="Thiếu môi trường giao tiếp" class="accent-ochre-600">
+                <span>Thiếu môi trường giao tiếp</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_difficulties" value="Sợ nói sai, ngại nói" class="accent-ochre-600">
+                <span>Sợ nói sai, ngại nói</span>
+              </label>
+            </div>
+            <textarea name="page_difficultyDetail" rows="2" placeholder="Bạn có thể chia sẻ cụ thể tình huống mình thường gặp nhất không?..." 
+                      class="w-full bg-[#f4efe4] border border-sand-300 p-2 text-xs outline-none focus:border-khaki-600 text-moss-950 mt-2 transition"></textarea>
+          </div>
+
+          <!-- Câu 3: Điều khiến bạn dừng lại -->
+          <div>
+            <label class="block text-xs font-semibold text-moss-900 mb-1.5">
+              3. Nếu từng nhiều lần bắt đầu học nhưng chưa duy trì được, điều gì thường khiến bạn dừng lại?
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-xs text-moss-800">
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_stoppingReasons" value="Không có thời gian / Công việc bận" class="accent-ochre-600">
+                <span>Không có thời gian / Công việc bận</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_stoppingReasons" value="Không biết học gì mỗi ngày" class="accent-ochre-600">
+                <span>Không biết học gì mỗi ngày</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_stoppingReasons" value="Không có người đồng hành" class="accent-ochre-600">
+                <span>Không có người đồng hành đôn đốc</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_stoppingReasons" value="Dễ mất động lực / Không thấy kết quả" class="accent-ochre-600">
+                <span>Dễ mất động lực / Không thấy kết quả</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_stoppingReasons" value="Học một thời gian rồi quên" class="accent-ochre-600">
+                <span>Học một thời gian rồi quên</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_stoppingReasons" value="Sợ mình không có năng khiếu" class="accent-ochre-600">
+                <span>Sợ mình không có năng khiếu</span>
+              </label>
+            </div>
+            <input type="text" name="page_stoppingReasonDetail" placeholder="Lý do khác khiến bạn thường dừng lại (nếu có)..." 
+                   class="w-full bg-[#f4efe4] border border-sand-300 p-2 text-xs outline-none focus:border-khaki-600 text-moss-950 mt-1.5 transition">
+          </div>
+
+          <!-- Câu 4: Mong muốn sau 60 ngày -->
+          <div>
+            <label class="block text-xs font-semibold text-moss-900 mb-1.5">
+              4. Sau hành trình 60 ngày, bạn mong muốn mình có thể làm được điều gì nhất?
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-xs text-moss-800">
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_expectations" value="Tự tin giao tiếp với người TQ" class="accent-ochre-600">
+                <span>Tự tin giao tiếp với người Trung Quốc</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_expectations" value="Nghe hiểu những câu đời sống" class="accent-ochre-600">
+                <span>Nghe hiểu những câu đời sống</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_expectations" value="Nói không phải dịch từng câu trong đầu" class="accent-ochre-600">
+                <span>Nói không dịch nhẩm từng câu</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_expectations" value="Phản xạ nhanh hơn, không còn sợ sai" class="accent-ochre-600">
+                <span>Phản xạ nhanh hơn, không còn sợ sai</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_expectations" value="Giao tiếp trong công việc" class="accent-ochre-600">
+                <span>Giao tiếp phục vụ công việc</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_expectations" value="Duy trì được việc học mỗi ngày" class="accent-ochre-600">
+                <span>Duy trì được việc học mỗi ngày</span>
+              </label>
+            </div>
+            <input type="text" name="page_expectationDetail" placeholder="Mong muốn hoặc mục tiêu cụ thể khác của bạn (nếu có)..." 
+                   class="w-full bg-[#f4efe4] border border-sand-300 p-2 text-xs outline-none focus:border-khaki-600 text-moss-950 mt-1.5 transition">
+          </div>
+
+          <!-- Câu 5: Điều bạn cần nhất từ người đồng hành -->
+          <div>
+            <label class="block text-xs font-semibold text-moss-900 mb-1.5">
+              5. Nếu có một người đồng hành cùng bạn, bạn mong người đó hỗ trợ điều gì nhất?
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-xs text-moss-800">
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_supportNeeds" value="Xây dựng lộ trình học" class="accent-ochre-600">
+                <span>Xây dựng lộ trình học rõ ràng</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_supportNeeds" value="Hướng dẫn phương pháp học" class="accent-ochre-600">
+                <span>Hướng dẫn phương pháp học đúng</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_supportNeeds" value="Sửa phát âm" class="accent-ochre-600">
+                <span>Sửa phát âm & thanh điệu</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_supportNeeds" value="Sửa bài nói" class="accent-ochre-600">
+                <span>Sửa bài nói & nắn câu</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_supportNeeds" value="Giúp mình duy trì việc học / nhắc nhở" class="accent-ochre-600">
+                <span>Nhắc nhở & đôn đốc duy trì</span>
+              </label>
+              <label class="flex items-center gap-2 p-1.5 bg-[#f4efe4] border border-sand-200 cursor-pointer hover:bg-sand-200">
+                <input type="checkbox" name="page_supportNeeds" value="Tạo môi trường giao tiếp an toàn" class="accent-ochre-600">
+                <span>Tạo môi trường an toàn để nói</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="pt-3">
+            <button type="submit" class="w-full py-4 px-6 bg-ochre-500 hover:bg-ochre-600 active:scale-95 text-sand-50 text-xs uppercase tracking-widest font-semibold transition shadow-md flex items-center justify-center gap-2">
+              <span>Gửi Khảo Sát & Hoàn Tất Giữ Chỗ</span>
+              <span>&rarr;</span>
+            </button>
+            <p class="text-center text-[10px] text-moss-600 mt-2">
+              🔒 Dữ liệu được bảo mật và chỉ dùng để Ngọc thiết kế bài tập riêng cho bạn.
+            </p>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- POPUP MODAL KHẢO SÁT (THÔNG TIN THANH TOÁN BÊN TRÁI, FORM BÊN PHẢI) -->
+  <div id="surveyModal" class="fixed inset-0 bg-moss-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-3 sm:p-5">
+    <div class="bg-[#f4efe4] max-w-5xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[92vh] overflow-hidden flex flex-col border border-sand-300">
+      
+      <div class="flex items-center justify-between pb-4 border-b border-sand-300 mb-4">
+        <div>
+          <span class="text-[10px] uppercase tracking-widest text-ochre-600 font-bold block">Đợt Thử Nghiệm 3 — 5 Học Viên</span>
+          <h3 class="font-serif text-xl sm:text-2xl text-moss-950 font-normal">Bản Khảo Sát Đầu Vào & Giữ Chỗ</h3>
+        </div>
+        <button onclick="closeModal('surveyModal')" class="text-moss-600 hover:text-moss-950 text-2xl font-light w-8 h-8 flex items-center justify-center">
+          &times;
+        </button>
+      </div>
+
+      <div class="overflow-y-auto custom-scrollbar pr-2">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+          
+          <!-- CỘT PHÍA TAY TRÁI (MODAL): THÔNG TIN THANH TOÁN & VIETQR -->
+          <div class="md:col-span-5 bg-[#faf8f4] border border-sand-300 p-5 shadow-sm space-y-3.5">
+            <div class="flex items-center justify-between pb-2.5 border-b border-sand-200">
+              <span class="text-xs uppercase tracking-widest font-bold text-moss-900">💳 Thanh toán giữ chỗ</span>
+              <span class="text-xs font-semibold text-khaki-600">MB Bank</span>
+            </div>
+
+            <!-- Khung thông tin tài khoản -->
+            <div class="space-y-2 text-xs bg-[#f4efe4] p-3.5 border border-sand-300">
+              <div>
+                <span class="text-[10px] uppercase tracking-wider text-moss-600 block">Chủ tài khoản</span>
+                <span class="font-serif font-bold text-moss-950 text-sm">TONG THI NGOC</span>
+              </div>
+              <div class="pt-1.5 border-t border-sand-200">
+                <span class="text-[10px] uppercase tracking-wider text-moss-600 block">Số tài khoản</span>
+                <div class="flex items-center justify-between mt-0.5">
+                  <span class="font-mono font-bold text-moss-950 text-base">0376837127</span>
+                  <button type="button" onclick="copyContentWithFeedback('0376837127', this, 'Số tài khoản')" class="px-2 py-0.5 bg-moss-800 hover:bg-moss-700 text-sand-50 text-[10px] font-semibold transition flex items-center gap-1">
+                    <span class="btn-text">Sao chép</span>
+                  </button>
+                </div>
+              </div>
+              <div class="pt-1.5 border-t border-sand-200">
+                <span class="text-[10px] uppercase tracking-wider text-moss-600 block">Cú pháp chuyển khoản</span>
+                <div class="flex items-center justify-between mt-0.5">
+                  <span class="font-mono font-bold text-ochre-600 text-xs">[Họ tên] [SĐT] 60N</span>
+                  <button type="button" onclick="copyContentWithFeedback('[Họ tên] [SĐT] 60N', this, 'Cú pháp')" class="px-2 py-0.5 bg-sand-200 text-moss-900 text-[10px] font-semibold border border-sand-300 transition">
+                    <span class="btn-text">Sao chép</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mã VietQR MB Bank -->
+            <div class="bg-white p-2.5 border border-sand-300 shadow-sm flex flex-col items-center">
+              <div class="flex items-center justify-between w-full px-1 mb-1 text-[10px] font-bold">
+                <span class="text-red-600">VietQR</span>
+                <span class="text-blue-800">MB BANK</span>
+              </div>
+              <img src="https://api.vietqr.io/image/970422-0376837127-print.jpg?accountName=TONG%20THI%20NGOC" 
+                   alt="Mã VietQR MB Bank - TONG THI NGOC" 
+                   class="w-full max-w-[170px] object-contain" />
+              <div class="flex items-center justify-between w-full px-1 mt-1 text-[9px] text-moss-500">
+                <span>napas 247</span>
+                <span class="text-moss-800 font-semibold">Tức thì 24/7</span>
+              </div>
+            </div>
+
+            <!-- Tải ảnh biên lai trong modal -->
+            <div>
+              <label class="text-[11px] font-bold text-moss-950 flex items-center justify-between mb-1">
+                <span>📸 Ảnh biên lai chuyển khoản:</span>
+                <span class="text-[9px] text-moss-600 bg-sand-200 px-1.5 py-0.5">Tùy chọn</span>
+              </label>
+              <div id="modalReceiptDropzone" onclick="document.getElementById('modalReceiptInput').click()" 
+                   class="p-2.5 border-2 border-dashed border-khaki-400 hover:border-moss-800 bg-[#f4efe4] cursor-pointer transition text-center flex flex-col items-center">
+                <input type="file" id="modalReceiptInput" accept="image/*" class="hidden" onchange="previewReceiptImage(this, 'modalReceiptPreviewBox', 'modalReceiptDropzone', 'modalReceiptThumb', 'modalReceiptName')">
+                <span class="text-sm">📷 Tải ảnh giao dịch</span>
+                <span class="text-[9px] text-moss-600">Bấm để tải ảnh chụp màn hình</span>
+              </div>
+              <div id="modalReceiptPreviewBox" class="hidden p-2 bg-sand-100 border border-khaki-500 items-center justify-between gap-2 mt-1.5">
+                <div class="flex items-center gap-2 overflow-hidden">
+                  <img id="modalReceiptThumb" src="" alt="Biên lai" class="w-10 h-10 object-cover border border-sand-300">
+                  <p id="modalReceiptName" class="text-[10px] text-moss-600 truncate max-w-[110px]">bienlai.png</p>
+                </div>
+                <button type="button" onclick="removeReceiptImage('modalReceiptInput', 'modalReceiptPreviewBox', 'modalReceiptDropzone')" 
+                        class="px-2 py-0.5 text-[10px] text-ochre-600 border border-ochre-400">Đổi</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CỘT PHÍA TAY PHẢI (MODAL): FORM KHẢO SÁT -->
+          <form onsubmit="handleFormSubmit(event)" class="md:col-span-7 space-y-4 bg-[#faf8f4] p-5 border border-sand-300">
+            <div>
+              <label class="block text-xs uppercase font-bold text-moss-950 mb-1.5">1. Gói tham gia giữ chỗ: *</label>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+                <label class="p-2.5 border border-sand-300 bg-[#f4efe4] flex items-center justify-between cursor-pointer">
+                  <span>Gói Cơ Bản (1.499k)</span>
+                  <input type="radio" name="modal_package" value="Gói Cơ Bản" class="accent-ochre-600">
+                </label>
+                <label class="p-2.5 border-2 border-khaki-500 bg-sand-200 flex items-center justify-between cursor-pointer">
+                  <span class="font-bold">Gói Tiêu Chuẩn (2.299k)</span>
+                  <input type="radio" name="modal_package" value="Gói Tiêu Chuẩn" checked class="accent-ochre-600">
+                </label>
+                <label class="p-2.5 border border-sand-300 bg-[#f4efe4] flex items-center justify-between cursor-pointer">
+                  <span>Gói Nâng Cao (3.499k)</span>
+                  <input type="radio" name="modal_package" value="Gói Nâng Cao" class="accent-ochre-600">
+                </label>
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-[11px] font-semibold text-moss-800 mb-1">Họ và tên của bạn: *</label>
+                <input type="text" name="modal_fullName" required placeholder="Nguyễn Lan Anh" class="w-full bg-[#f4efe4] border border-sand-300 p-2 text-xs outline-none text-moss-900">
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold text-moss-800 mb-1">Số Zalo / Điện thoại: *</label>
+                <input type="tel" name="modal_phone" required placeholder="0912 xxx xxx" class="w-full bg-[#f4efe4] border border-sand-300 p-2 text-xs outline-none text-moss-900">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-semibold text-moss-800 mb-1">2. Khó khăn lớn nhất bạn đang gặp phải:</label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 text-xs text-moss-800">
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_difficulties" value="Không nhớ từ vựng" class="accent-ochre-600"> Không nhớ từ vựng</label>
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_difficulties" value="Biết từ không đặt được câu" class="accent-ochre-600"> Biết từ không đặt được câu</label>
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_difficulties" value="Nghe không kịp phản xạ" class="accent-ochre-600"> Nghe không kịp phản xạ</label>
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_difficulties" value="Sợ phát âm sai" class="accent-ochre-600"> Sợ phát âm sai</label>
+              </div>
+              <textarea name="modal_difficultyDetail" rows="2" placeholder="Tình huống cụ thể bạn hay gặp..." class="w-full bg-[#f4efe4] border border-sand-300 p-2 text-xs outline-none text-moss-900 mt-1.5"></textarea>
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-semibold text-moss-800 mb-1">3. Điều gì khiến bạn dừng lại khi tự học:</label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 text-xs text-moss-800">
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_stoppingReasons" value="Bận rộn" class="accent-ochre-600"> Không có thời gian / Bận rộn</label>
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_stoppingReasons" value="Không biết học gì" class="accent-ochre-600"> Không biết học gì mỗi ngày</label>
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_stoppingReasons" value="Dễ mất động lực" class="accent-ochre-600"> Dễ mất động lực</label>
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_stoppingReasons" value="Không có người đồng hành" class="accent-ochre-600"> Không có người đồng hành</label>
+              </div>
+              <input type="text" name="modal_stoppingReasonDetail" placeholder="Lý do khác khiến bạn dừng lại..." class="w-full bg-[#f4efe4] border border-sand-300 p-1.5 text-xs outline-none text-moss-900 mt-1">
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-semibold text-moss-800 mb-1">4. Mong muốn lớn nhất sau 60 ngày:</label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 text-xs text-moss-800">
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_expectations" value="Tự tin giao tiếp" class="accent-ochre-600"> Tự tin giao tiếp với người TQ</label>
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_expectations" value="Nói không dịch nhẩm" class="accent-ochre-600"> Nói không cần dịch nhẩm</label>
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_expectations" value="Nghe hiểu câu đời sống" class="accent-ochre-600"> Nghe hiểu câu đời sống</label>
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_expectations" value="Thói quen học mỗi ngày" class="accent-ochre-600"> Thói quen tự học mỗi ngày</label>
+              </div>
+              <input type="text" name="modal_expectationDetail" placeholder="Mong muốn cụ thể khác..." class="w-full bg-[#f4efe4] border border-sand-300 p-1.5 text-xs outline-none text-moss-900 mt-1">
+            </div>
+
+            <div>
+              <label class="block text-[11px] font-semibold text-moss-800 mb-1">5. Cần nhất từ người đồng hành:</label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 text-xs text-moss-800">
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_supportNeeds" value="Xây dựng lộ trình" class="accent-ochre-600"> Xây dựng lộ trình rõ ràng</label>
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_supportNeeds" value="Sửa phát âm" class="accent-ochre-600"> Sửa phát âm & thanh điệu</label>
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_supportNeeds" value="Sửa bài nói" class="accent-ochre-600"> Sửa bài nói & nắn câu</label>
+                <label class="flex items-center gap-1.5"><input type="checkbox" name="modal_supportNeeds" value="Nhắc nhở học tập" class="accent-ochre-600"> Nhắc nhở & đôn đốc</label>
+              </div>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 bg-ochre-500 hover:bg-ochre-600 active:scale-95 text-sand-50 text-xs uppercase tracking-widest font-semibold transition shadow">
+              Hoàn Tất Khảo Sát & Gửi Giữ Chỗ
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL XÁC NHẬN THÀNH CÔNG -->
+  <div id="successModal" class="fixed inset-0 bg-moss-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[#faf8f4] max-w-md w-full p-8 text-center border border-sand-300 shadow-2xl">
+      <div class="w-12 h-12 bg-sand-200 text-ochre-600 text-xl flex items-center justify-center mx-auto mb-3">
+        ✓
+      </div>
+      <h3 class="font-serif text-2xl font-normal text-moss-950 mb-2">Đã Nhận Khảo Sát & Giữ Chỗ!</h3>
+      <p class="text-xs text-moss-700 leading-relaxed mb-6">
+        Cảm ơn bạn đã tin tưởng chia sẻ. Ngọc sẽ xem xét kỹ thông tin và trực tiếp nhắn tin qua Zalo cho bạn trong vòng 24 giờ tới nhé!
+      </p>
+      <button onclick="closeModal('successModal')" class="w-full py-3 bg-moss-900 hover:bg-moss-800 text-sand-50 text-xs uppercase tracking-widest font-semibold transition">
+        Cảm ơn Ngọc!
+      </button>
+    </div>
+  </div>
+
+  <!-- FOOTER EDITORIAL -->
+  <footer class="bg-moss-950 text-sand-300 py-12 text-xs border-t border-moss-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <span class="font-serif italic text-base text-sand-50 font-bold block">Yêu Lại Tiếng Trung Sau 60 Ngày</span>
+        <span class="text-moss-400 text-[11px]">Đồng hành bởi Tong Thi Ngoc</span>
+      </div>
+      <p class="text-moss-400 text-center sm:text-right text-[11px]">
+        Bản quyền © 2026. Mọi quyền được bảo lưu.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC & GOOGLE APPS SCRIPT SYNC -->
+  <script>
+    // URL Web App Google Apps Script đã triển khai chính thức của bạn
+    const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzVFpqYb4ddSIYPEIbfZUbtcBA9mjxQvPH9BqiFrUolsD3varBJ1THbLRupdcKoGq4M/exec";
+
+    function openModal(modalId, packageName) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        if (packageName) {
+          const matchingRadio = document.querySelector(`input[name="modal_package"][value*="${packageName}"]`);
+          if (matchingRadio) matchingRadio.checked = true;
+        }
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    // Sao chép nội dung với phản hồi
+    function copyContentWithFeedback(textToCopy, btnElement, itemName) {
+      const performCopyFallback = () => {
+        const textArea = document.createElement("textarea");
+        textArea.value = textToCopy;
+        textArea.style.position = "fixed";
+        textArea.style.opacity = "0";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try { document.execCommand('copy'); } catch (err) {}
+        document.body.removeChild(textArea);
+      };
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(textToCopy).catch(() => performCopyFallback());
+      } else {
+        performCopyFallback();
+      }
+
+      if (btnElement) {
+        const textSpan = btnElement.querySelector('.btn-text');
+        const originalText = textSpan ? textSpan.textContent : '';
+        if (textSpan) textSpan.textContent = "Đã chép ✓";
+        setTimeout(() => {
+          if (textSpan) textSpan.textContent = originalText;
+        }, 2000);
+      }
+    }
+
+    // Xem trước ảnh chuyển khoản
+    let uploadedReceiptFile = null;
+
+    function previewReceiptImage(input, previewBoxId, dropzoneId, thumbImgId, fileNameId) {
+      if (input.files && input.files[0]) {
+        const file = input.files[0];
+        uploadedReceiptFile = file;
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+          const thumb = document.getElementById(thumbImgId);
+          const nameLabel = document.getElementById(fileNameId);
+          const previewBox = document.getElementById(previewBoxId);
+          const dropzone = document.getElementById(dropzoneId);
+
+          if (thumb) thumb.src = e.target.result;
+          if (nameLabel) nameLabel.textContent = file.name;
+          if (dropzone) dropzone.classList.add('hidden');
+          if (previewBox) {
+            previewBox.classList.remove('hidden');
+            previewBox.classList.add('flex');
+          }
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+
+    function removeReceiptImage(inputId, previewBoxId, dropzoneId) {
+      const input = document.getElementById(inputId);
+      const previewBox = document.getElementById(previewBoxId);
+      const dropzone = document.getElementById(dropzoneId);
+
+      if (input) input.value = '';
+      uploadedReceiptFile = null;
+      if (previewBox) {
+        previewBox.classList.add('hidden');
+        previewBox.classList.remove('flex');
+      }
+      if (dropzone) dropzone.classList.remove('hidden');
+    }
+
+    function fileToBase64(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = error => reject(error);
+      });
+    }
+
+    // Gửi form & tải ảnh biên lai vào Google Drive / Sheet
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnHtml = submitBtn.innerHTML;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `<span>Đang gửi thông tin & tải biên lai...</span>`;
+
+      try {
+        let selectedPackage = "Gói Tiêu Chuẩn";
+        const packageRadio = form.querySelector('input[type="radio"]:checked');
+        if (packageRadio) selectedPackage = packageRadio.value;
+
+        const textInputs = form.querySelectorAll('input[type="text"], input[type="tel"]');
+        let fullName = "";
+        let phone = "";
+        if (textInputs.length >= 2) {
+          fullName = textInputs[0].value.trim();
+          phone = textInputs[1].value.trim();
+        }
+
+        const difficultyBoxes = form.querySelectorAll('input[type="checkbox"][name*="difficulties"]:checked');
+        const difficulties = [];
+        difficultyBoxes.forEach(box => difficulties.push(box.value));
+        const difficultyTextarea = form.querySelector('textarea');
+        const difficultyDetail = difficultyTextarea ? difficultyTextarea.value.trim() : "";
+
+        const stoppingBoxes = form.querySelectorAll('input[type="checkbox"][name*="stoppingReasons"]:checked');
+        const stoppingReasons = [];
+        stoppingBoxes.forEach(box => stoppingReasons.push(box.value));
+        const stopReasonInput = form.querySelector('input[name*="stoppingReasonDetail"]');
+        const stoppingReasonDetail = stopReasonInput ? stopReasonInput.value.trim() : "";
+
+        const expectationBoxes = form.querySelectorAll('input[type="checkbox"][name*="expectations"]:checked');
+        const expectations = [];
+        expectationBoxes.forEach(box => expectations.push(box.value));
+        const expectationInput = form.querySelector('input[name*="expectationDetail"]');
+        const expectationDetail = expectationInput ? expectationInput.value.trim() : "";
+
+        let fileBase64 = null;
+        let fileName = null;
+        let fileType = null;
+
+        // Kiểm tra file biên lai từ form tương ứng
+        const fileInput = form.id === 'surveyModal' 
+          ? document.getElementById('modalReceiptInput') 
+          : (document.getElementById('pageReceiptInput') || document.getElementById('modalReceiptInput'));
+          
+        if (fileInput && fileInput.files && fileInput.files[0]) {
+          const file = fileInput.files[0];
+          fileName = file.name;
+          fileType = file.type;
+          fileBase64 = await fileToBase64(file);
+        }
+
+        const payload = {
+          package: selectedPackage,
+          fullName: fullName,
+          phone: phone,
+          difficulties: difficulties,
+          difficultyDetail: difficultyDetail,
+          stoppingReasons: stoppingReasons,
+          stoppingReasonDetail: stoppingReasonDetail,
+          expectations: expectations,
+          expectationDetail: expectationDetail,
+          fileBase64: fileBase64,
+          fileName: fileName,
+          fileType: fileType
+        };
+
+        if (GOOGLE_APPS_SCRIPT_URL) {
+          await fetch(GOOGLE_APPS_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify(payload)
+          });
+        }
+
+        closeModal('surveyModal');
+        form.reset();
+        openModal('successModal');
+
+      } catch (err) {
+        console.error("Lỗi khi gửi:", err);
+        closeModal('surveyModal');
+        openModal('successModal');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHtml;
+      }
+    }
+
+    window.onclick = function(event) {
+      const surveyModal = document.getElementById('surveyModal');
+      const successModal = document.getElementById('successModal');
+      if (event.target === surveyModal) closeModal('surveyModal');
+      if (event.target === successModal) closeModal('successModal');
+    }
+  </script>
+</body>
+</html>
