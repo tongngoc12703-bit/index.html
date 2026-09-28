@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mê Tiếng Trung | Kích Hoạt Lại Tiếng Trung Trong 60 Ngày</title>
+  
+  <!-- Google Fonts: Cormorant Garamond & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            deepForest: '#4E543B',
+            mossGreen: '#585F47',
+            sageGreen: '#8A8E76',
+            mutedSage: '#93967C',
+            warmCream: '#EAE3D6',
+            almondSand: '#E7DDCF',
+            warmOchre: '#C89355',
+            mutedAmber: '#C0864B',
+            textDark: '#433E37',
+            textLight: '#F4EFEA',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #EAE3D6;
+      color: #433E37;
+      font-family: 'Montserrat', sans-serif;
+      padding-top: 72px; /* Chiều cao cố định chính xác cho thanh navbar basic */
+    }
+    html {
+      scroll-padding-top: 88px;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    .sharp-btn {
+      border-radius: 2px;
+      transition: all 0.2s ease-in-out;
+    }
+    .sharp-btn:hover {
+      opacity: 0.95;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body class="bg-warmCream text-textDark antialiased selection:bg-warmOchre selection:text-white">
+
+  <!-- ==================== THANH ĐIỀU HƯỚNG CƠ BẢN (BASIC NAVBAR) ==================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#4E543B] text-[#F4EFEA] border-b border-[#C89355]/40 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-[72px] flex items-center justify-between">
+      
+      <!-- Logo đơn giản, thanh lịch -->
+      <a href="#tong-quan" class="flex items-center gap-2.5">
+        <span class="w-8 h-8 rounded-[2px] bg-warmOchre text-textLight font-serif font-bold flex items-center justify-center text-sm shadow-sm">
+          M
+        </span>
+        <div class="flex flex-col">
+          <span class="text-lg font-serif font-bold tracking-wider text-warmCream leading-tight">MÊ TIẾNG TRUNG</span>
+          <span class="text-[9px] uppercase tracking-widest text-warmOchre font-medium">Lộ Trình 60 Ngày</span>
+        </div>
+      </a>
+
+      <!-- Menu máy tính dạng liên kết cơ bản, trực quan, dễ bấm -->
+      <nav class="hidden lg:flex items-center space-x-6 text-[13px] font-medium text-textLight/90">
+        <a href="#tong-quan" class="hover:text-warmOchre transition-colors">Tổng quan</a>
+        <a href="#noi-dau" class="hover:text-warmOchre transition-colors">Nỗi đau học viên</a>
+        <a href="#cau-chuyen" class="hover:text-warmOchre transition-colors">Câu chuyện cô Ngọc</a>
+        <a href="#phuong-phap" class="hover:text-warmOchre transition-colors">Phương pháp & Lộ trình</a>
+        <a href="#diem-b" class="hover:text-warmOchre transition-colors">Cam kết & Kết quả</a>
+        <a href="#hoc-phi" class="hover:text-warmOchre transition-colors">Học phí</a>
+        <a href="#dang-ky-thanh-toan" class="hover:text-warmOchre transition-colors">Đăng ký & Thanh toán</a>
+      </nav>
+
+      <!-- CTA Nút bấm & Nút menu trên di động -->
+      <div class="flex items-center gap-3">
+        <a href="#dang-ky-thanh-toan" class="sharp-btn px-4 py-2 bg-warmOchre hover:bg-mutedAmber text-textLight text-xs uppercase font-bold tracking-wider shadow">
+          Đăng Ký Ngay
+        </a>
+        
+        <!-- Nút Menu Hamburger cho điện thoại -->
+        <button id="navToggle" aria-label="Mở menu" class="lg:hidden p-2 rounded-[2px] text-textLight hover:bg-black/20 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Dropdown Menu cơ bản trên điện thoại -->
+    <div id="basicMobileMenu" class="hidden lg:hidden bg-[#3C422D] border-t border-sageGreen/30 px-5 py-4 space-y-3 text-xs uppercase tracking-wider font-medium text-textLight shadow-xl">
+      <a href="#tong-quan" class="block py-1 hover:text-warmOchre" onclick="toggleNav()">Tổng quan</a>
+      <a href="#noi-dau" class="block py-1 hover:text-warmOchre" onclick="toggleNav()">Nỗi đau học viên</a>
+      <a href="#cau-chuyen" class="block py-1 hover:text-warmOchre" onclick="toggleNav()">Câu chuyện cô Ngọc</a>
+      <a href="#phuong-phap" class="block py-1 hover:text-warmOchre" onclick="toggleNav()">Phương pháp & Lộ trình</a>
+      <a href="#diem-b" class="block py-1 hover:text-warmOchre" onclick="toggleNav()">Cam kết & Kết quả</a>
+      <a href="#hoc-phi" class="block py-1 hover:text-warmOchre" onclick="toggleNav()">Học phí & Quà tặng</a>
+      <a href="#dang-ky-thanh-toan" class="block py-1 text-warmOchre font-bold" onclick="toggleNav()">Đăng ký & Thanh toán (N60)</a>
+      <a href="#faq" class="block py-1 hover:text-warmOchre" onclick="toggleNav()">Hỏi đáp (FAQ)</a>
+    </div>
+  </header>
+
+  <!-- ==================== 1. HOOK & TỔNG QUAN ==================== -->
+  <section id="tong-quan" class="py-16 md:py-24 border-b border-sageGreen/30">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-warmOchre font-semibold">
+            <span class="w-8 h-[2px] bg-warmOchre"></span>
+            Mê Tiếng Trung Giới Thiệu
+          </div>
+          
+          <h1 class="text-4xl md:text-6xl font-serif text-deepForest font-normal leading-[1.15]">
+            Bạn không cần bắt đầu lại <br><span class="italic font-semibold text-warmOchre">từ con số 0.</span>
+          </h1>
+
+          <p class="text-sm md:text-base text-textDark/85 font-light leading-relaxed">
+            Đã học tiếng Trung khá lâu, nhưng đến lúc cần nói lại không biết bắt đầu từ đâu? Trong 60 ngày, hãy kích hoạt lại những gì bạn đã học để bắt đầu đặt câu, trả lời và nói về những chủ đề quen thuộc — thay vì tiếp tục học trước quên sau.
+          </p>
+
+          <!-- 3 Nguyên tắc "KHÔNG" -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs md:text-sm">
+            <div class="bg-almondSand/80 p-4 border-l-2 border-warmOchre">
+              <span class="text-[10px] uppercase tracking-wider text-deepForest font-bold block mb-1">Không</span>
+              Nhồi thêm thật nhiều từ mới
+            </div>
+            <div class="bg-almondSand/80 p-4 border-l-2 border-warmOchre">
+              <span class="text-[10px] uppercase tracking-wider text-deepForest font-bold block mb-1">Không</span>
+              Học lại toàn bộ từ đầu
+            </div>
+            <div class="bg-almondSand/80 p-4 border-l-2 border-warmOchre">
+              <span class="text-[10px] uppercase tracking-wider text-deepForest font-bold block mb-1">Không</span>
+              Đợi “đủ giỏi” mới dám mở miệng
+            </div>
+          </div>
+
+          <p class="text-xs md:text-sm text-textDark/75 italic">
+            Điều bạn cần là một lộ trình đủ rõ để biết hôm nay nên ôn gì, đủ nhỏ để có thể làm đều, và đủ an toàn để bạn dám dùng lại tiếng Trung dù vẫn còn sai.
+          </p>
+
+          <div class="pt-2 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+            <a href="#dang-ky-thanh-toan" class="sharp-btn px-8 py-4 bg-warmOchre hover:bg-mutedAmber text-textLight uppercase tracking-wider font-bold text-xs shadow-md w-full sm:w-auto text-center">
+              Đăng Ký Khảo Sát Đầu Vào
+            </a>
+            <span class="text-xs text-textDark/70 italic font-serif">Giữ chỗ đợt thử nghiệm — tối đa 5 học viên</span>
+          </div>
+        </div>
+
+        <!-- Mục tiêu 60 ngày -->
+        <div class="lg:col-span-5 relative">
+          <div class="bg-deepForest text-textLight p-8 md:p-10 shadow-xl border border-sageGreen/40">
+            <div class="w-10 h-10 border border-warmOchre/40 flex items-center justify-center mb-6 text-warmOchre font-serif text-lg">
+              🎯
+            </div>
+            <h3 class="text-2xl font-serif mb-4 text-warmCream font-medium">Sau 60 Ngày, Mục Tiêu Là:</h3>
+            <ul class="space-y-4 text-xs font-light text-warmCream/90 leading-relaxed">
+              <li class="flex items-start gap-3">
+                <span class="text-warmOchre font-bold font-serif text-base leading-none">01</span>
+                <span>Hoàn thành 8 module theo lộ trình từ ôn lại đến sử dụng.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-warmOchre font-bold font-serif text-base leading-none">02</span>
+                <span>Biết chọn từ vựng và mẫu câu phù hợp để đặt câu, trả lời, nói hoặc viết về những chủ đề gần gũi.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-warmOchre font-bold font-serif text-base leading-none">03</span>
+                <span>Hoàn thành một bài nói hoặc bài viết cuối khóa bằng những kiến thức mình đã học.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-warmOchre font-bold font-serif text-base leading-none">04</span>
+                <span>Có bản đồ kiến thức cá nhân và bằng chứng trước – sau để tự nhìn thấy sự tiến bộ rõ rệt.</span>
+              </li>
+            </ul>
+
+            <div class="mt-8 pt-6 border-t border-sageGreen/30 text-[11px] italic text-textLight/70 leading-relaxed">
+              "Không hứa giúp bạn thành thạo như người bản xứ sau 60 ngày. Chương trình chỉ hứa đồng hành để bạn bắt đầu sử dụng lại những gì mình đã học."
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2. ĐIỂM A — 4 TẦNG NỖI ĐAU ==================== -->
+  <section id="noi-dau" class="py-20 md:py-24 bg-almondSand/50 border-b border-sageGreen/30">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="max-w-3xl mb-14">
+        <span class="text-xs uppercase tracking-widest text-deepForest font-bold block mb-2">Điểm A — Thực trạng học tiếng Trung</span>
+        <h2 class="text-3xl md:text-5xl font-serif text-deepForest font-normal leading-tight">
+          Khi bạn đã học rất nhiều nhưng vẫn thấy mình <span class="italic text-warmOchre font-semibold">“không biết gì”</span>
+        </h2>
+        <p class="mt-4 text-xs md:text-sm text-textDark/80 font-light leading-relaxed">
+          Bạn hiểu một số ngữ pháp. Bạn nhận ra nhiều chữ khi nhìn thấy. Nhưng đến lúc cần tự đặt câu, trả lời câu hỏi đơn giản hay nói về bản thân, đầu bạn bỗng trống rỗng. Bạn biết mình đã học — nhưng không lấy kiến thức ấy ra để dùng được.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-warmCream p-6 border border-sageGreen/30 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="text-[11px] font-semibold uppercase tracking-widest text-deepForest/60 mb-2">Tầng 1</div>
+            <h3 class="text-lg font-serif font-semibold text-deepForest mb-3">Vấn Đề Nhìn Thấy Được</h3>
+            <ul class="text-xs leading-relaxed space-y-2 text-textDark/80 font-light">
+              <li>• Học trước quên sau; một từ đã gặp nhiều lần vẫn quên khi cần dùng.</li>
+              <li>• Biết nghĩa, biết cấu trúc nhưng không tự đặt được câu.</li>
+              <li>• Làm bài ngữ pháp tốt nhưng phản xạ nghe – nói chậm.</li>
+              <li>• Gặp người bản xứ thì sợ phát âm sai, ấp úng.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-warmCream p-6 border border-sageGreen/30 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="text-[11px] font-semibold uppercase tracking-widest text-deepForest/60 mb-2">Tầng 2</div>
+            <h3 class="text-lg font-serif font-semibold text-deepForest mb-3">Sự Bất Tiện Mỗi Ngày</h3>
+            <ul class="text-xs leading-relaxed space-y-2 text-textDark/80 font-light">
+              <li>• Mỗi lần học lại phải tự tìm bài, tự đoán nên ôn gì trước.</li>
+              <li>• Lưu tài liệu rất nhiều nhưng ít khi hoàn thành trọn vẹn.</li>
+              <li>• Bận rộn khiến một buổi nghỉ thành vài tuần rồi bỏ dở.</li>
+              <li>• Không có người sửa phát âm và chỉ ra lỗ hổng tư duy.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-warmCream p-6 border border-sageGreen/30 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="text-[11px] font-semibold uppercase tracking-widest text-deepForest/60 mb-2">Tầng 3</div>
+            <h3 class="text-lg font-serif font-semibold text-deepForest mb-3">Cảm Xúc Âm Thầm</h3>
+            <ul class="text-xs leading-relaxed space-y-2 text-textDark/80 font-light">
+              <li>• “Mình bỏ nhiều thời gian như vậy, sao vẫn không dùng được?”</li>
+              <li>• “Có phải mình không có năng khiếu ngoại ngữ?”</li>
+              <li>• “Học tiếp có lại tốn tiền và bỏ dở như những lần trước?”</li>
+              <li>• Càng không thấy kết quả, càng khó tin vào bản thân.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-deepForest text-textLight p-6 border border-deepForest shadow-md flex flex-col justify-between">
+          <div>
+            <div class="text-[11px] font-semibold uppercase tracking-widest text-warmOchre mb-2">Tầng 4</div>
+            <h3 class="text-lg font-serif font-semibold text-warmCream mb-3">Cái Giá Nếu Tiếp Diễn</h3>
+            <ul class="text-xs leading-relaxed space-y-2 text-textLight/85 font-light">
+              <li>• Quên dần những kiến thức đã từng cất công tích lũy.</li>
+              <li>• Mất thêm thời gian và tiền bạc vào phương pháp sai lầm.</li>
+              <li>• Bỏ lỡ cơ hội thăng tiến và mở rộng mối quan hệ.</li>
+              <li>• <strong>Đáng tiếc nhất:</strong> Bạn bắt đầu tin rằng mình không thể.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center max-w-2xl mx-auto">
+        <p class="font-serif italic text-base md:text-lg text-deepForest">
+          “Có thể vấn đề không phải là bạn học kém. Bạn chỉ chưa có một lộ trình giúp mình sử dụng lại những gì đã học — đủ chậm để hiểu, đủ đều để nhớ, đủ thực tế để dùng và đủ rõ để nhìn thấy tiến bộ.”
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 3. CÂU CHUYỆN CỦA NGỌC ==================== -->
+  <section id="cau-chuyen" class="py-20 md:py-24 bg-deepForest text-textLight border-b border-sageGreen/30">
+    <div class="max-w-5xl mx-auto px-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+        
+        <div class="md:col-span-5 relative">
+          <div class="border border-sageGreen/40 p-8 bg-mossGreen/40 shadow-xl">
+            <div class="w-14 h-14 border border-warmOchre rounded-full flex items-center justify-center font-serif text-2xl text-warmOchre mb-5 bg-deepForest">
+              玉
+            </div>
+            <h3 class="text-2xl font-serif text-warmCream">Mình là Ngọc.</h3>
+            <p class="text-xs uppercase tracking-widest text-warmOchre font-medium mt-1 mb-4">HSK6 • 4 Năm Dạy & Hỗ Trợ Học Viên</p>
+            <p class="text-xs font-light text-textLight/85 leading-relaxed">
+              "Hành trình của mình không bắt đầu bằng sự tự tin. Mình từng học đi học lại rất nhiều lần, có kiến thức cơ bản đã học nhưng vẫn không nhớ, đối diện với người Trung Quốc vẫn sợ..."
+            </p>
+          </div>
+        </div>
+
+        <div class="md:col-span-7 space-y-4 text-xs md:text-sm font-light text-textLight/90 leading-relaxed">
+          <span class="text-xs uppercase tracking-widest text-warmOchre font-semibold">Tâm sự từ người đi trước</span>
+          <h2 class="text-3xl md:text-4xl font-serif text-warmCream font-normal">
+            Buổi chiều ở quán cà phê & những lần <span class="italic text-warmOchre">muốn dừng lại</span>
+          </h2>
+          
+          <p>
+            Sau một quãng thời gian dài học đi học lại mà vẫn bế tắc, mình ngồi ở một quán cà phê và khóc rất nhiều. Dừng lại thì không đành vì mình thật sự yêu tiếng Trung. Đi tiếp thì không biết phải đi bằng cách nào. Lúc ấy, mình gần như không tin rằng bản thân có thể làm được.
+          </p>
+
+          <p>
+            Sau khi bình tâm, mình nhận ra: Nếu không chấp nhận từ bỏ, mình cần ngừng chỉ trích bản thân và tìm một cách học khác. Không phải cố nhiều hơn một cách mù quáng — mà là tìm hiểu vì sao mình quên, vì sao mình không dùng được — rồi sửa từng mắt xích một.
+          </p>
+
+          <div class="bg-mossGreen/30 p-4 border-l-2 border-warmOchre space-y-1.5 text-xs">
+            <div class="font-semibold text-warmCream uppercase tracking-wider mb-1">Quy luật thực tế:</div>
+            <div>• Tiếp nhận lượng kiến thức vừa sức thay vì nhồi nhét.</div>
+            <div>• Hiểu rõ nghĩa, cấu trúc và ngữ cảnh trước khi cố ghi nhớ.</div>
+            <div>• Đóng tài liệu và tự gợi nhớ bằng Active Recall & Spaced Repetition.</div>
+            <div>• Dùng kiến thức ngay để đặt câu, ghi âm hoặc viết ngắn.</div>
+            <div>• Ghi lại từng bằng chứng nhỏ: hôm nay nhớ được gì, dám nói câu nào.</div>
+          </div>
+
+          <p class="font-serif italic text-base text-warmCream pt-2">
+            "Người học không chỉ bỏ cuộc vì tiếng Trung khó. Nhiều người bỏ cuộc vì họ không nhìn thấy mình đang tiến bộ. Khi mỗi ngày có một bằng chứng nhỏ rằng 'mình làm được', niềm tin sẽ quay trở lại."
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 4. PHƯƠNG PHÁP & LỘ TRÌNH 8 TUẦN ==================== -->
+  <section id="phuong-phap" class="py-20 md:py-24 bg-warmCream border-b border-sageGreen/30">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest text-warmOchre font-bold block mb-2">Quy trình khoa học</span>
+        <h2 class="text-3xl md:text-5xl font-serif text-deepForest font-normal">
+          Phương Pháp <span class="italic text-warmOchre font-semibold">MÌNH CÓ THỂ™</span>
+        </h2>
+        <p class="mt-4 text-xs md:text-sm text-textDark/80 font-light">
+          Chương trình không yêu cầu bạn học thật nhiều trong một lúc. Bạn đi theo quy trình 5 bước có thể lặp lại với mỗi nội dung:
+        </p>
+      </div>
+
+      <!-- 5 Bước -->
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-16">
+        
+        <div class="bg-almondSand p-5 border border-sageGreen/30 flex flex-col justify-between">
+          <div>
+            <span class="text-2xl font-serif font-bold text-warmOchre">01</span>
+            <div class="text-[11px] uppercase tracking-wider text-deepForest font-bold mt-2 mb-1">INPUT</div>
+            <h4 class="text-base font-serif font-medium text-deepForest mb-2">Tiếp Nhận Đúng</h4>
+            <p class="text-xs text-textDark/80 leading-relaxed font-light">
+              Chọn từ vựng, câu mẫu vừa sức theo ngữ cảnh thật. Học đủ ít để hiểu và dùng được.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-almondSand p-5 border border-sageGreen/30 flex flex-col justify-between">
+          <div>
+            <span class="text-2xl font-serif font-bold text-warmOchre">02</span>
+            <div class="text-[11px] uppercase tracking-wider text-deepForest font-bold mt-2 mb-1">UNDERSTAND</div>
+            <h4 class="text-base font-serif font-medium text-deepForest mb-2">Hiểu Sâu</h4>
+            <p class="text-xs text-textDark/80 leading-relaxed font-light">
+              Làm rõ nghĩa, cấu trúc và ngữ cảnh. Hiểu lý do vì sao câu được nói như vậy.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-almondSand p-5 border border-sageGreen/30 flex flex-col justify-between">
+          <div>
+            <span class="text-2xl font-serif font-bold text-warmOchre">03</span>
+            <div class="text-[11px] uppercase tracking-wider text-deepForest font-bold mt-2 mb-1">RETRIEVE</div>
+            <h4 class="text-base font-serif font-medium text-deepForest mb-2">Tự Gợi Nhớ</h4>
+            <p class="text-xs text-textDark/80 leading-relaxed font-light">
+              Đóng sách lại và kích hoạt não bộ: chuyển từ "nhìn thì biết" sang "tự nhớ và dùng".
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-almondSand p-5 border border-sageGreen/30 flex flex-col justify-between">
+          <div>
+            <span class="text-2xl font-serif font-bold text-warmOchre">04</span>
+            <div class="text-[11px] uppercase tracking-wider text-deepForest font-bold mt-2 mb-1">USE</div>
+            <h4 class="text-base font-serif font-medium text-deepForest mb-2">Sử Dụng Ngay</h4>
+            <p class="text-xs text-textDark/80 leading-relaxed font-light">
+              Dùng để đặt câu, trả lời hoặc ghi âm ngay để nhìn thấy ngay lỗ hổng kiến thức.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-deepForest text-textLight p-5 border border-deepForest flex flex-col justify-between">
+          <div>
+            <span class="text-2xl font-serif font-bold text-warmOchre">05</span>
+            <div class="text-[11px] uppercase tracking-wider text-warmCream font-bold mt-2 mb-1">BELIEVE</div>
+            <h4 class="text-base font-serif font-medium text-warmCream mb-2">Ghi Nhận Bằng Chứng</h4>
+            <p class="text-xs text-textLight/80 leading-relaxed font-light">
+              Lưu vào Sổ online Mình Có Thể để khôi phục niềm tin bằng số liệu tiến bộ thực tế.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Lộ trình 8 Tuần -->
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-2xl md:text-3xl font-serif text-deepForest mb-8 text-center">
+          Lộ Trình Chi Tiết 8 Tuần (60 Ngày)
+        </h3>
+
+        <div class="space-y-2.5 text-xs">
+          <div class="grid grid-cols-1 md:grid-cols-12 bg-almondSand p-4 border border-sageGreen/30 items-center gap-3">
+            <div class="md:col-span-2 font-serif text-base font-bold text-deepForest">Tuần 1</div>
+            <div class="md:col-span-3 font-semibold text-deepForest uppercase tracking-wider">Mình Bắt Đầu</div>
+            <div class="md:col-span-7 text-textDark/80 font-light">Làm khảo sát đầu vào, đặt mục tiêu, làm quen phương pháp và hoàn thành nhiệm vụ đầu tiên.</div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 bg-almondSand p-4 border border-sageGreen/30 items-center gap-3">
+            <div class="md:col-span-2 font-serif text-base font-bold text-deepForest">Tuần 2</div>
+            <div class="md:col-span-3 font-semibold text-deepForest uppercase tracking-wider">Mình Hiểu</div>
+            <div class="md:col-span-7 text-textDark/80 font-light">Biết học từ vựng và câu mẫu theo nghĩa, cấu trúc và ngữ cảnh; học ít nhưng chắc hơn.</div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 bg-almondSand p-4 border border-sageGreen/30 items-center gap-3">
+            <div class="md:col-span-2 font-serif text-base font-bold text-deepForest">Tuần 3</div>
+            <div class="md:col-span-3 font-semibold text-deepForest uppercase tracking-wider">Mình Nhớ</div>
+            <div class="md:col-span-7 text-textDark/80 font-light">Dùng Active Recall và ôn tập ngắt quãng để giảm thiểu triệt để tình trạng học trước quên sau.</div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 bg-almondSand p-4 border border-sageGreen/30 items-center gap-3">
+            <div class="md:col-span-2 font-serif text-base font-bold text-deepForest">Tuần 4</div>
+            <div class="md:col-span-3 font-semibold text-deepForest uppercase tracking-wider">Mình Dám Dùng</div>
+            <div class="md:col-span-7 text-textDark/80 font-light">Đặt câu, trả lời câu hỏi ngắn, ghi âm và tập nói sai trong môi trường an toàn, không phán xét.</div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 bg-almondSand p-4 border border-sageGreen/30 items-center gap-3">
+            <div class="md:col-span-2 font-serif text-base font-bold text-deepForest">Tuần 5</div>
+            <div class="md:col-span-3 font-semibold text-deepForest uppercase tracking-wider">Mình Giao Tiếp</div>
+            <div class="md:col-span-7 text-textDark/80 font-light">Nói về bản thân, sở thích, học tập, công việc và đời sống bằng câu phù hợp với năng lực.</div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 bg-almondSand p-4 border border-sageGreen/30 items-center gap-3">
+            <div class="md:col-span-2 font-serif text-base font-bold text-deepForest">Tuần 6</div>
+            <div class="md:col-span-3 font-semibold text-deepForest uppercase tracking-wider">Mình Tiến Bộ</div>
+            <div class="md:col-span-7 text-textDark/80 font-light">Nhìn lại dữ liệu học tập, biết mình nhớ gì, dùng được gì và cần cải thiện gì.</div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 bg-almondSand p-4 border border-sageGreen/30 items-center gap-3">
+            <div class="md:col-span-2 font-serif text-base font-bold text-deepForest">Tuần 7</div>
+            <div class="md:col-span-3 font-semibold text-deepForest uppercase tracking-wider">Mình Tự Học</div>
+            <div class="md:col-span-7 text-textDark/80 font-light">Biết sắp xếp lịch cá nhân, tự ôn và tự ghi nhận tiến bộ mà không phụ thuộc hoàn toàn vào giáo viên.</div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 bg-deepForest text-textLight p-4 border border-deepForest items-center gap-3">
+            <div class="md:col-span-2 font-serif text-base font-bold text-warmOchre">Tuần 8</div>
+            <div class="md:col-span-3 font-semibold text-warmCream uppercase tracking-wider">Mình Có Thể</div>
+            <div class="md:col-span-7 text-textLight/90 font-light">Hoàn thành bài nói/viết cuối khóa, tổng kết bằng chứng và xây dựng lộ trình tiếp theo.</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 5. ĐIỂM B & CAM KẾT ĐẦU RA ==================== -->
+  <section id="diem-b" class="py-20 md:py-24 bg-deepForest text-textLight border-b border-sageGreen/30">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-5">
+          <span class="text-xs uppercase tracking-widest text-warmOchre font-semibold">Bức tranh Điểm B</span>
+          <h2 class="text-3xl md:text-5xl font-serif text-warmCream font-normal leading-tight">
+            Sau 60 ngày, bạn không còn đứng trước <span class="italic text-warmOchre">mớ kiến thức rời rạc.</span>
+          </h2>
+          <p class="text-xs md:text-sm font-light text-textLight/80 leading-relaxed">
+            Bạn mở Sổ online “Mình Có Thể” và nhìn thấy hành trình của chính mình: bài đầu vào, các lần ghi âm, lỗi từng mắc, phần đã sửa và bài cuối khóa. Bạn có bằng chứng cụ thể để trả lời mình đã tiến bộ ra sao.
+          </p>
+
+          <div class="space-y-3 pt-2 text-xs text-textLight/90">
+            <div class="flex items-start gap-3">
+              <span class="text-warmOchre font-bold">✓</span>
+              <span>Tự giới thiệu và nói về bản thân bằng câu phù hợp với trình độ hiện tại.</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-warmOchre font-bold">✓</span>
+              <span>Chủ động lấy lại từ vựng, mẫu câu quen thuộc thay vì chỉ nhận ra khi nhìn đáp án.</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-warmOchre font-bold">✓</span>
+              <span>Ghi âm, đặt câu và tham gia thực hành mà không còn đợi mình hoàn hảo.</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-warmOchre font-bold">✓</span>
+              <span>Từ “chắc mình không thể”, bạn tự tin nói: <em>“Mình chưa hoàn hảo. Nhưng mình đang dùng được. Và mình biết cách đi tiếp.”</em></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="bg-mossGreen/40 p-7 md:p-8 border border-sageGreen/40 space-y-4">
+            <h3 class="text-xl font-serif text-warmCream font-medium border-b border-sageGreen/30 pb-3 flex items-center gap-2">
+              <span>📌</span> Đầu Ra Cụ Thể Cuối Chương Trình
+            </h3>
+            
+            <div class="space-y-3 text-xs font-light">
+              <div class="bg-deepForest/80 p-3.5 border border-sageGreen/30">
+                <strong class="text-warmOchre block mb-0.5">01. Sản phẩm cuối khóa:</strong>
+                Một bài nói hoặc bài viết ngắn về chủ đề quen thuộc bằng chính kiến thức đã học.
+              </div>
+              <div class="bg-deepForest/80 p-3.5 border border-sageGreen/30">
+                <strong class="text-warmOchre block mb-0.5">02. Bản đồ kiến thức cá nhân:</strong>
+                Biết rõ đã biết gì, dùng được gì, phần nào còn yếu và nên học tiếp ra sao.
+              </div>
+              <div class="bg-deepForest/80 p-3.5 border border-sageGreen/30">
+                <strong class="text-warmOchre block mb-0.5">03. Bộ bằng chứng tiến bộ:</strong>
+                Bằng chứng trước – sau để tự nhìn thấy sự bứt phá của mình.
+              </div>
+              <div class="bg-deepForest/80 p-3.5 border border-sageGreen/30">
+                <strong class="text-warmOchre block mb-0.5">04. Quy trình tự học có thể lặp lại:</strong>
+                Chọn nội dung → Hiểu → Tự nhớ lại → Sử dụng → Nhận phản hồi → Ghi nhận.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. HỌC PHÍ & 5 QUÀ TẶNG ==================== -->
+  <section id="hoc-phi" class="py-20 md:py-24 bg-warmCream border-b border-sageGreen/30">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest text-warmOchre font-bold block mb-2">Lời đề nghị đợt thử nghiệm</span>
+        <h2 class="text-3xl md:text-5xl font-serif text-deepForest font-normal">
+          Bạn Nhận Được Gì <span class="italic text-warmOchre font-semibold">Khi Tham Gia?</span>
+        </h2>
+        <p class="mt-4 text-xs md:text-sm text-textDark/80 font-light">
+          Giá trị tham khảo toàn bộ chương trình: ~4.000.000đ. Ưu đãi giữ chỗ sớm cho đợt thử nghiệm giới hạn 05 học viên.
+        </p>
+      </div>
+
+      <!-- 5 Quà Tặng Đi Kèm -->
+      <div class="bg-almondSand p-7 md:p-8 border border-sageGreen/40 mb-14 shadow-sm">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-6">
+          <h3 class="text-xl font-serif text-deepForest font-semibold flex items-center gap-2">
+            <span>🎁</span> 5 Quà Tặng Độc Quyền Đi Kèm
+          </h3>
+          <span class="text-xs font-mono font-bold bg-warmOchre/20 text-warmOchre px-3 py-1 border border-warmOchre/40">
+            Tổng giá trị quà tặng: 2.096.000đ
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5 text-xs">
+          <div class="bg-warmCream p-3.5 border border-sageGreen/30">
+            <span class="text-warmOchre font-bold block mb-1">Quà 1 • 199.000đ</span>
+            <strong>Sổ online “Mình Có Thể”:</strong> Ghi nhận tiến bộ mỗi ngày thay vì chỉ nhớ những lúc làm chưa tốt.
+          </div>
+          <div class="bg-warmCream p-3.5 border border-sageGreen/30">
+            <span class="text-warmOchre font-bold block mb-1">Quà 2 • 499.000đ</span>
+            <strong>Bộ check từ vựng:</strong> Ôn đúng thời điểm ngắt quãng, giảm thiểu tình trạng học trước quên sau.
+          </div>
+          <div class="bg-warmCream p-3.5 border border-sageGreen/30">
+            <span class="text-warmOchre font-bold block mb-1">Quà 3 • 399.000đ</span>
+            <strong>File nghe phát âm & phản xạ:</strong> Luyện nhại theo ngữ điệu tự nhiên, nghe - nói thuận tiện.
+          </div>
+          <div class="bg-warmCream p-3.5 border border-sageGreen/30">
+            <span class="text-warmOchre font-bold block mb-1">Quà 4 • 700.000đ</span>
+            <strong>Buổi chữa phát âm nhóm nhỏ:</strong> Sửa lỗi thật, tháo gỡ nỗi sợ nói sai trong phòng kín.
+          </div>
+          <div class="bg-warmCream p-3.5 border border-sageGreen/30">
+            <span class="text-warmOchre font-bold block mb-1">Quà 5 • 299.000đ</span>
+            <strong>Template tự học sau khóa:</strong> Kế hoạch chi tiết để tiếp tục tự đi sau 60 ngày.
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Gói Học Phí -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+        
+        <!-- Cơ Bản -->
+        <div class="bg-almondSand p-7 border border-sageGreen/30 flex flex-col justify-between">
+          <div>
+            <div class="text-[11px] uppercase tracking-widest text-deepForest font-bold mb-1">Gói Tự Học</div>
+            <h4 class="text-2xl font-serif text-deepForest font-bold">CƠ BẢN</h4>
+            <p class="text-xs text-textDark/70 mt-2 min-h-[32px]">Người có thể tự học theo video, tài liệu và lộ trình có sẵn.</p>
+            <div class="my-5">
+              <span class="text-3xl font-serif font-bold text-deepForest">1.499.000đ</span>
+            </div>
+            <ul class="space-y-2.5 text-xs text-textDark/80 pt-4 border-t border-sageGreen/20">
+              <li>✓ Toàn bộ video 8 module theo lộ trình</li>
+              <li>✓ Hệ thống tài liệu & mẫu thực hành</li>
+              <li>✓ Tự nộp bài & đối chiếu đáp án</li>
+              <li class="text-textDark/40">✕ Không tham gia Zoom trực tiếp</li>
+              <li class="text-textDark/40">✕ Không có chữa bài cá nhân</li>
+            </ul>
+          </div>
+          <a href="#dang-ky-thanh-toan" class="mt-8 block text-center sharp-btn py-3 border border-deepForest text-deepForest font-semibold text-xs uppercase tracking-wider hover:bg-deepForest hover:text-textLight">
+            Chọn Gói Cơ Bản
+          </a>
+        </div>
+
+        <!-- Tiêu Chuẩn -->
+        <div class="bg-deepForest text-textLight p-7 border-2 border-warmOchre relative flex flex-col justify-between shadow-xl">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-warmOchre text-textLight text-[10px] uppercase font-bold tracking-widest px-3 py-1">
+            Được Khuyên Chọn • 5 Suất Giới Hạn
+          </div>
+          <div>
+            <div class="text-[11px] uppercase tracking-widest text-warmOchre font-bold mb-1">Học Và Được Kèm Sát</div>
+            <h4 class="text-2xl font-serif text-warmCream font-bold">TIÊU CHUẨN</h4>
+            <p class="text-xs text-textLight/80 mt-2 min-h-[32px]">Cần Zoom thực hành, chữa bài nhóm, check-in và hỏi đáp cùng cô Ngọc.</p>
+            
+            <div class="my-5">
+              <div class="text-xs text-textLight/60 line-through">Giá niêm yết: 2.500.000đ</div>
+              <div class="text-3xl font-serif font-bold text-warmOchre mt-1">2.299.000đ</div>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-textLight/90 pt-4 border-t border-sageGreen/40">
+              <li>✓ Toàn bộ lộ trình 8 module</li>
+              <li>✓ <strong>2 buổi Zoom / tuần</strong> học & thực hành</li>
+              <li>✓ Bản ghi (record) buổi học xem lại trọn đời</li>
+              <li>✓ Chữa bài nhóm & “ghế nóng” thực hành</li>
+              <li>✓ Sổ online “Mình Có Thể” + 5 Quà Tặng</li>
+              <li>✓ Check-in, hỏi đáp nhóm kín mỗi ngày</li>
+            </ul>
+          </div>
+          <a href="#dang-ky-thanh-toan" class="mt-8 block text-center sharp-btn py-3.5 bg-warmOchre hover:bg-mutedAmber text-textLight font-semibold text-xs uppercase tracking-wider shadow">
+            Đăng Ký Gói Tiêu Chuẩn
+          </a>
+        </div>
+
+        <!-- Nâng Cao -->
+        <div class="bg-almondSand p-7 border border-sageGreen/30 flex flex-col justify-between">
+          <div>
+            <div class="text-[11px] uppercase tracking-widest text-deepForest font-bold mb-1">Kèm Cặp 1-1 Riêng</div>
+            <h4 class="text-2xl font-serif text-deepForest font-bold">NÂNG CAO</h4>
+            <p class="text-xs text-textDark/70 mt-2 min-h-[32px]">Người cần hỗ trợ sát hơn với 2 buổi 1-1 (30 phút/buổi) cùng cô Ngọc.</p>
+            <div class="my-5">
+              <span class="text-3xl font-serif font-bold text-deepForest">3.499.000đ</span>
+            </div>
+            <ul class="space-y-2.5 text-xs text-textDark/80 pt-4 border-t border-sageGreen/20">
+              <li>✓ Trọn vẹn quyền lợi gói TIÊU CHUẨN</li>
+              <li>✓ <strong>2 buổi riêng 1-1 (30p/buổi)</strong> cùng cô Ngọc</li>
+              <li>✓ Sửa phát âm & lỗi dùng từ chi tiết từng âm tiết</li>
+              <li>✓ Định hướng lộ trình học tập & nghề nghiệp riêng</li>
+            </ul>
+          </div>
+          <a href="#dang-ky-thanh-toan" class="mt-8 block text-center sharp-btn py-3 border border-deepForest text-deepForest font-semibold text-xs uppercase tracking-wider hover:bg-deepForest hover:text-textLight">
+            Chọn Gói Nâng Cao
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Cam kết giảm rủi ro -->
+      <div class="mt-12 bg-almondSand p-6 border border-sageGreen/40 max-w-4xl mx-auto">
+        <h4 class="font-serif text-base md:text-lg text-deepForest font-semibold mb-3 text-center">
+          🛡️ Cam Kết Giảm Rủi Ro Tuyệt Đối Cho Bạn
+        </h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-xs text-textDark/80 leading-relaxed">
+          <div class="border-l-2 border-warmOchre pl-4">
+            <strong class="text-deepForest block mb-1">1. Quyền cân nhắc trong 7 ngày đầu:</strong>
+            Hoàn 100% học phí nếu thấy không phù hợp sau bài mở đầu và khảo sát, theo điều khoản thông báo khi đăng ký.
+          </div>
+          <div class="border-l-2 border-warmOchre pl-4">
+            <strong class="text-deepForest block mb-1">2. Bảo hành đồng hành:</strong>
+            Tham gia 80% buổi học và làm đủ bài tập mà chưa hoàn thành bài nói/viết ngắn quen thuộc, bạn được <strong>học lại đợt sau miễn phí</strong> hoặc nhận thêm 1 buổi định hướng 1-1.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 7. CHUYỂN ĐỔI: THANH TOÁN (TRÁI) & FORM (PHẢI) ==================== -->
+  <section id="dang-ky-thanh-toan" class="py-20 md:py-24 bg-warmCream border-b border-sageGreen/30">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs uppercase tracking-widest text-warmOchre font-bold block mb-2">Bước chuyển hóa tiếp theo</span>
+        <h2 class="text-3xl md:text-5xl font-serif text-deepForest font-normal">
+          Đăng Ký Khảo Sát & Giữ Chỗ
+        </h2>
+        <p class="mt-3 text-xs md:text-sm text-textDark/80 font-light">
+          Đợt thử nghiệm chỉ nhận <strong>tối đa 5 học viên</strong> để cô Ngọc trực tiếp theo dõi sát từng ngày.
+        </p>
+      </div>
+
+      <!-- CẤU TRÚC CHIA ĐÔI: BÊN TRÁI THANH TOÁN - BÊN PHẢI KHẢO SÁT -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- BÊN TRÁI: THÔNG TIN THANH TOÁN (CÚ PHÁP: N60) -->
+        <div class="lg:col-span-5 bg-deepForest text-textLight p-7 md:p-8 border border-sageGreen/40 shadow-lg">
+          <div class="flex items-center justify-between border-b border-sageGreen/40 pb-4 mb-5">
+            <div>
+              <span class="text-[11px] uppercase tracking-widest text-warmOchre font-semibold block">Thông tin chuyển khoản</span>
+              <h3 class="text-xl font-serif text-warmCream font-medium">Tài Khoản Giữ Chỗ</h3>
+            </div>
+            <span class="text-[10px] bg-warmOchre/20 text-warmOchre px-2.5 py-0.5 border border-warmOchre/40 font-mono">Chính Chủ</span>
+          </div>
+
+          <div class="space-y-3.5 text-xs font-light">
+            <div class="bg-mossGreen/50 p-3.5 border border-sageGreen/30">
+              <span class="text-textLight/60 block text-[11px]">Ngân hàng thụ hưởng:</span>
+              <span class="text-sm font-semibold text-warmCream font-serif">MB BANK (Ngân hàng Quân Đội)</span>
+            </div>
+
+            <div class="bg-mossGreen/50 p-3.5 border border-sageGreen/30 flex items-center justify-between">
+              <div>
+                <span class="text-textLight/60 block text-[11px]">Số tài khoản:</span>
+                <span class="text-base font-mono font-bold text-warmOchre tracking-wider">999988886666</span>
+              </div>
+              <button onclick="copyData('999988886666', 'Đã sao chép số tài khoản!')" class="text-[11px] uppercase tracking-wider text-warmCream underline hover:text-warmOchre">
+                Sao chép
+              </button>
+            </div>
+
+            <div class="bg-mossGreen/50 p-3.5 border border-sageGreen/30">
+              <span class="text-textLight/60 block text-[11px]">Chủ tài khoản:</span>
+              <span class="text-sm font-semibold text-warmCream uppercase">MÊ TIẾNG TRUNG - NGUYEN THI NGOC</span>
+            </div>
+
+            <div class="bg-warmOchre/20 p-4 border border-warmOchre/50">
+              <span class="text-warmOchre block text-[11px] font-bold uppercase tracking-wider">Nội dung thanh toán ghi:</span>
+              <div class="text-2xl font-mono font-bold text-warmCream mt-1 tracking-widest flex items-center justify-between">
+                <span>N60</span>
+                <button onclick="copyData('N60', 'Đã sao chép nội dung chuyển khoản: N60')" class="text-xs font-sans text-warmOchre underline hover:text-white">
+                  Sao chép mã
+                </button>
+              </div>
+              <p class="text-[11px] text-warmCream/85 mt-1 italic">
+                * Vui lòng chỉ ghi đúng nội dung: <strong class="text-warmOchre">N60</strong> để hệ thống tự động nhận diện học viên.
+              </p>
+            </div>
+          </div>
+
+          <!-- QR Visual -->
+          <div class="mt-6 pt-5 border-t border-sageGreen/30 text-center">
+            <div class="inline-block p-2.5 bg-white border border-sageGreen/30 mb-2 shadow-sm">
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=N60" alt="QR MB Bank N60" class="w-32 h-32 mx-auto object-contain">
+            </div>
+            <p class="text-[11px] text-textLight/60 italic">Quét mã QR thanh toán nhanh với cú pháp: <strong class="text-warmOchre">N60</strong></p>
+          </div>
+
+          <div class="mt-5 text-[11px] text-textLight/70 italic border-t border-sageGreen/30 pt-3">
+            * Sau khi hoàn tất chuyển khoản hoặc gửi khảo sát, cô Ngọc sẽ trực tiếp liên hệ qua Zalo trong 24h để trao đổi và gửi bài khảo sát đầu vào.
+          </div>
+        </div>
+
+        <!-- BÊN PHẢI: FORM ĐĂNG KÝ VÀ KHẢO SÁT (TẤT CẢ ĐỀU CÓ MỤC LÝ DO KHÁC) -->
+        <div class="lg:col-span-7 bg-almondSand p-7 md:p-9 border border-sageGreen/40 shadow-md">
+          <div class="border-b border-sageGreen/30 pb-3 mb-5">
+            <span class="text-xs uppercase tracking-widest text-deepForest font-bold block">Phiếu khảo sát đầu vào</span>
+            <h3 class="text-2xl font-serif text-deepForest font-semibold">Thông Tin Học Viên</h3>
+          </div>
+
+          <form id="enrollmentForm" onsubmit="submitEnrollment(event)" class="space-y-5 text-xs">
+            
+            <!-- Họ tên & SĐT/Zalo -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block font-semibold text-deepForest mb-1 uppercase tracking-wider text-[11px]">Họ tên *</label>
+                <input type="text" required placeholder="Ví dụ: Nguyễn Thảo Vy" class="w-full bg-warmCream border border-sageGreen/50 p-2.5 text-textDark focus:outline-none focus:border-deepForest sharp-btn">
+              </div>
+              <div>
+                <label class="block font-semibold text-deepForest mb-1 uppercase tracking-wider text-[11px]">Số điện thoại / Zalo *</label>
+                <input type="tel" required placeholder="09xxxxxxxx" class="w-full bg-warmCream border border-sageGreen/50 p-2.5 text-textDark focus:outline-none focus:border-deepForest sharp-btn">
+              </div>
+            </div>
+
+            <!-- Gói học quan tâm -->
+            <div>
+              <label class="block font-semibold text-deepForest mb-1 uppercase tracking-wider text-[11px]">Gói học bạn chọn đăng ký *</label>
+              <select class="w-full bg-warmCream border border-sageGreen/50 p-2.5 text-textDark focus:outline-none focus:border-deepForest sharp-btn font-medium">
+                <option value="standard">Gói TIÊU CHUẨN (2.299.000đ) — Được khuyên chọn</option>
+                <option value="basic">Gói CƠ BẢN (1.499.000đ) — Tự học theo video</option>
+                <option value="advanced">Gói NÂNG CAO (3.499.000đ) — Kèm 1-1 riêng</option>
+              </select>
+            </div>
+
+            <!-- Câu 1: Khó khăn lớn nhất -->
+            <div class="space-y-2 pt-2 border-t border-sageGreen/20">
+              <label class="block font-semibold text-deepForest uppercase tracking-wider text-[11px]">
+                1. Khó khăn lớn nhất bạn đã gặp phải? *
+              </label>
+              <div class="space-y-1.5 text-textDark/90">
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="difficulty" value="forget" required class="accent-deepForest">
+                  <span>Học trước quên sau, một từ đã gặp nhiều lần vẫn không nhớ khi cần dùng</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="difficulty" value="sentence" class="accent-deepForest">
+                  <span>Biết nghĩa, biết cấu trúc nhưng không tự đặt được câu hoàn chỉnh</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="difficulty" value="reflex" class="accent-deepForest">
+                  <span>Làm bài ngữ pháp được nhưng phản xạ nghe – nói chậm, sợ phát âm sai</span>
+                </label>
+                <!-- Mục lý do khác -->
+                <div class="pt-1">
+                  <input type="text" name="difficulty_other" placeholder="Lý do / khó khăn khác của bạn..." class="w-full bg-warmCream border border-sageGreen/40 p-2 text-textDark text-[11px] focus:outline-none focus:border-deepForest sharp-btn">
+                </div>
+              </div>
+            </div>
+
+            <!-- Câu 2: Điều gì khiến dừng lại không tự học -->
+            <div class="space-y-2 pt-2 border-t border-sageGreen/20">
+              <label class="block font-semibold text-deepForest uppercase tracking-wider text-[11px]">
+                2. Điều gì khiến bạn dừng lại không tự học? *
+              </label>
+              <div class="space-y-1.5 text-textDark/90">
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="stop_reason" value="schedule" required class="accent-deepForest">
+                  <span>Bận công việc/gia đình, nghỉ vài ngày thành vài tuần rồi mất đà</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="stop_reason" value="no_feedback" class="accent-deepForest">
+                  <span>Không có người sửa phát âm, không biết câu mình nói có tự nhiên không</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="stop_reason" value="overwhelmed" class="accent-deepForest">
+                  <span>Lưu quá nhiều tài liệu nhưng càng học càng rối, không biết nên bắt đầu từ đâu</span>
+                </label>
+                <!-- Mục lý do khác -->
+                <div class="pt-1">
+                  <input type="text" name="stop_reason_other" placeholder="Lý do khác khiến bạn dừng lại..." class="w-full bg-warmCream border border-sageGreen/40 p-2 text-textDark text-[11px] focus:outline-none focus:border-deepForest sharp-btn">
+                </div>
+              </div>
+            </div>
+
+            <!-- Câu 3: Mong muốn lớn nhất sau 60 ngày -->
+            <div class="space-y-2 pt-2 border-t border-sageGreen/20">
+              <label class="block font-semibold text-deepForest uppercase tracking-wider text-[11px]">
+                3. Mong muốn lớn nhất sau 60 ngày? *
+              </label>
+              <div class="space-y-1.5 text-textDark/90">
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="goal" value="output" required class="accent-deepForest">
+                  <span>Hoàn thành được một bài nói/viết tự tin về bản thân & chủ đề quen thuộc</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="goal" value="mindset" class="accent-deepForest">
+                  <span>Chủ động lấy lại từ vựng, tự gợi nhớ và không còn sợ nói sai</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="goal" value="roadmap" class="accent-deepForest">
+                  <span>Có bản đồ cá nhân và biết chính xác cách tự học tiếp theo</span>
+                </label>
+                <!-- Mục lý do khác -->
+                <div class="pt-1">
+                  <input type="text" name="goal_other" placeholder="Mong muốn khác của bạn..." class="w-full bg-warmCream border border-sageGreen/40 p-2 text-textDark text-[11px] focus:outline-none focus:border-deepForest sharp-btn">
+                </div>
+              </div>
+            </div>
+
+            <!-- Câu 4: Cần nhất từ người đồng hành -->
+            <div class="space-y-2 pt-2 border-t border-sageGreen/20">
+              <label class="block font-semibold text-deepForest uppercase tracking-wider text-[11px]">
+                4. Cần nhất từ người đồng hành? *
+              </label>
+              <div class="space-y-1.5 text-textDark/90">
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="mentor_need" value="feedback" required class="accent-deepForest">
+                  <span>Sửa phát âm chi tiết và chỉ ra chính xác mình đang vướng ở đâu</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="mentor_need" value="discipline" class="accent-deepForest">
+                  <span>Đồng hành sát sao, nhắc nhở làm đều để không bị bỏ dở giữa chừng</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="mentor_need" value="safe_space" class="accent-deepForest">
+                  <span>Tạo môi trường kiên nhẫn, an toàn để dám dùng lại tiếng Trung</span>
+                </label>
+                <!-- Mục lý do khác -->
+                <div class="pt-1">
+                  <input type="text" name="mentor_need_other" placeholder="Nhu cầu khác từ người đồng hành..." class="w-full bg-warmCream border border-sageGreen/40 p-2 text-textDark text-[11px] focus:outline-none focus:border-deepForest sharp-btn">
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-3">
+              <button type="submit" class="w-full sharp-btn py-3.5 bg-deepForest hover:bg-mossGreen text-textLight font-semibold uppercase tracking-wider text-xs shadow-md flex items-center justify-center gap-2">
+                <span>Gửi Khảo Sát & Giữ Chỗ Ngay</span>
+              </button>
+              <p class="text-center text-[11px] text-textDark/60 mt-2.5 italic">
+                Nếu nền tảng chưa phù hợp, bạn sẽ được cô Ngọc tư vấn thẳng thắn trước khi vào lớp.
+              </p>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 8. FAQ ==================== -->
+  <section id="faq" class="py-20 bg-almondSand/40 border-b border-sageGreen/30">
+    <div class="max-w-4xl mx-auto px-6">
+      
+      <div class="text-center max-w-xl mx-auto mb-14">
+        <span class="text-xs uppercase tracking-widest text-warmOchre font-bold block mb-2">Thắc mắc thường gặp</span>
+        <h2 class="text-3xl md:text-4xl font-serif text-deepForest font-normal">
+          Câu Hỏi <span class="italic text-warmOchre">Thường Gặp</span>
+        </h2>
+      </div>
+
+      <div class="space-y-3 text-xs">
+        
+        <details class="group bg-warmCream border border-sageGreen/30 p-4 cursor-pointer">
+          <summary class="flex justify-between items-center font-serif text-base font-semibold text-deepForest list-none">
+            <span>Em đã học ở nơi khác nhưng vẫn không giao tiếp được. Em có theo được không?</span>
+            <span class="text-warmOchre transition-transform group-open:rotate-180">▼</span>
+          </summary>
+          <p class="mt-2.5 text-textDark/80 font-light leading-relaxed">
+            Có thể, nếu bạn đã có nền tảng cơ bản và sẵn sàng làm khảo sát đầu vào. Chương trình không bắt bạn học lại toàn bộ từ đầu; bạn sẽ xác định phần còn nhớ, phần còn yếu và thực hành sử dụng lại kiến thức qua những nhiệm vụ nhỏ. Nếu nền tảng chưa phù hợp, bạn sẽ được trao đổi trước khi đăng ký.
+          </p>
+        </details>
+
+        <details class="group bg-warmCream border border-sageGreen/30 p-4 cursor-pointer">
+          <summary class="flex justify-between items-center font-serif text-base font-semibold text-deepForest list-none">
+            <span>Em không có năng khiếu ngoại ngữ thì sao?</span>
+            <span class="text-warmOchre transition-transform group-open:rotate-180">▼</span>
+          </summary>
+          <p class="mt-2.5 text-textDark/80 font-light leading-relaxed">
+            Chương trình không dựa trên giả định rằng bạn phải có năng khiếu. Bạn được hướng dẫn chia nhỏ nội dung, tự gợi nhớ, ôn ngắt quãng và dùng ngay. Kết quả vẫn phụ thuộc vào việc bạn thực hành đều và hoàn thành nhiệm vụ.
+          </p>
+        </details>
+
+        <details class="group bg-warmCream border border-sageGreen/30 p-4 cursor-pointer">
+          <summary class="flex justify-between items-center font-serif text-base font-semibold text-deepForest list-none">
+            <span>Em không có nhiều thời gian thì có học được không?</span>
+            <span class="text-warmOchre transition-transform group-open:rotate-180">▼</span>
+          </summary>
+          <p class="mt-2.5 text-textDark/80 font-light leading-relaxed">
+            Bạn cần chủ động dành thời gian cho các buổi học và nhiệm vụ trong 60 ngày. Có bản ghi để xem lại nếu lỡ buổi, nhưng bản ghi không thay thế việc thực hành. Hãy chỉ đăng ký nếu bạn có thể duy trì việc học đều.
+          </p>
+        </details>
+
+        <details class="group bg-warmCream border border-sageGreen/30 p-4 cursor-pointer">
+          <summary class="flex justify-between items-center font-serif text-base font-semibold text-deepForest list-none">
+            <span>Khóa học có giúp em đỗ HSK không?</span>
+            <span class="text-warmOchre transition-transform group-open:rotate-180">▼</span>
+          </summary>
+          <p class="mt-2.5 text-textDark/80 font-light leading-relaxed">
+            Đây không phải khóa luyện thi HSK và không cam kết điểm thi. Trọng tâm là giúp bạn ôn lại, ghi nhớ và sử dụng kiến thức trong các tình huống quen thuộc.
+          </p>
+        </details>
+
+        <details class="group bg-warmCream border border-sageGreen/30 p-4 cursor-pointer">
+          <summary class="flex justify-between items-center font-serif text-base font-semibold text-deepForest list-none">
+            <span>Nếu em thấy chương trình không phù hợp thì sao?</span>
+            <span class="text-warmOchre transition-transform group-open:rotate-180">▼</span>
+          </summary>
+          <p class="mt-2.5 text-textDark/80 font-light leading-relaxed">
+            Bạn có thể yêu cầu hoàn tiền trong 7 ngày đầu theo chính sách được công bố khi đăng ký, sau khi hoàn thành bài mở đầu và khảo sát đầu vào.
+          </p>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== LỜI NHẮN CUỐI & FOOTER ==================== -->
+  <section class="py-16 bg-deepForest text-textLight text-center">
+    <div class="max-w-4xl mx-auto px-6 space-y-5">
+      <div class="w-10 h-10 border border-warmOchre mx-auto flex items-center justify-center font-serif text-warmOchre text-lg">
+        🌿
+      </div>
+      <h2 class="text-3xl md:text-4xl font-serif text-warmCream font-normal leading-tight">
+        KÍCH HOẠT LẠI TIẾNG TRUNG TRONG 60 NGÀY
+      </h2>
+      <p class="text-xs md:text-sm font-light text-textLight/85 max-w-xl mx-auto leading-relaxed">
+        Dùng lại những gì bạn đã học — không cần bắt đầu lại từ đầu.
+      </p>
+      <div>
+        <a href="#dang-ky-thanh-toan" class="sharp-btn inline-block px-8 py-3.5 bg-warmOchre hover:bg-mutedAmber text-textLight uppercase font-semibold text-xs tracking-wider shadow-lg">
+          Đăng Ký Khảo Sát Đầu Vào
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#3A3F2B] text-textLight/70 py-6 border-t border-sageGreen/20 text-xs">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-3">
+      <div class="flex items-center gap-2">
+        <span class="font-serif text-sm font-bold text-warmCream">MÊ TIẾNG TRUNG</span>
+        <span>•</span>
+        <span>Phương Pháp MÌNH CÓ THỂ™</span>
+      </div>
+      <div class="text-[11px] text-textLight/50">
+        © 2026 Mê Tiếng Trung. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification (Thay thế alert) -->
+  <div id="toastMessage" style="display: none;" class="fixed bottom-5 right-5 z-[99999] bg-[#333824] text-warmCream border border-warmOchre p-4 shadow-xl text-xs max-w-sm rounded-[2px]">
+    <div class="font-bold text-warmOchre mb-1" id="toastHeader">Thông báo</div>
+    <div id="toastBody" class="font-light text-[11px]">Nội dung</div>
+  </div>
+
+  <script>
+    // Bật/tắt menu trên di động
+    function toggleNav() {
+      const menu = document.getElementById('basicMobileMenu');
+      if (menu) {
+        menu.classList.toggle('hidden');
+      }
+    }
+    document.getElementById('navToggle').addEventListener('click', toggleNav);
+
+    // Toast thay thế alert()
+    function displayToast(title, body) {
+      const toast = document.getElementById('toastMessage');
+      const header = document.getElementById('toastHeader');
+      const text = document.getElementById('toastBody');
+      if (!toast) return;
+      header.textContent = title;
+      text.textContent = body;
+      toast.style.display = 'block';
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 4000);
+    }
+
+    // Sao chép an toàn qua execCommand
+    function copyData(text, message) {
+      const input = document.createElement('input');
+      input.value = text;
+      document.body.appendChild(input);
+      input.select();
+      try {
+        document.execCommand('copy');
+        displayToast('Sao chép thành công', message);
+      } catch (err) {
+        displayToast('Thông báo', 'Vui lòng sao chép thủ công: ' + text);
+      }
+      document.body.removeChild(input);
+    }
+
+    // Xử lý nộp form
+    function submitEnrollment(e) {
+      e.preventDefault();
+      displayToast(
+        'Đăng ký giữ chỗ thành công!',
+        'Cảm ơn bạn! Cô Ngọc sẽ liên hệ qua Zalo/SĐT trong 24h để trao đổi và gửi bài khảo sát đầu vào (Mã giữ chỗ: N60).'
+      );
+      e.target.reset();
+    }
+  </script>
+
+</body>
+</html>
